@@ -1,0 +1,6 @@
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/src/yolo_object_detector_node.cpp.o] Interrupt
+make[2]: *** wait: No child processes.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** wait: No child processes.  Stop.
+make[1]: *** [CMakeFiles/darknet_ros_lib.dir/all] Error 2
+make: *** [all] Interrupt

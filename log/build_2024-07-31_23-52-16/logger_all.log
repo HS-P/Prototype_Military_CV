@@ -1,0 +1,465 @@
+[0.615s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.616s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb1886128>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb1886128>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fb1886470>)
+[0.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.716s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.716s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hansol/ros2_ws'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extension 'ignore'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extension 'ignore_ament_install'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extensions ['colcon_pkg']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extension 'colcon_pkg'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extensions ['colcon_meta']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extension 'colcon_meta'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extensions ['ros']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extension 'ros'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extensions ['cmake', 'python']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extension 'cmake'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extension 'python'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extensions ['python_setup_py']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros) by extension 'python_setup_py'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/build) by extensions ['ignore', 'ignore_ament_install']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/build) by extension 'ignore'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/build) ignored
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extensions ['ignore', 'ignore_ament_install']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extension 'ignore'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extension 'ignore_ament_install'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extensions ['colcon_pkg']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extension 'colcon_pkg'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extensions ['colcon_meta']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extension 'colcon_meta'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extensions ['ros']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extension 'ros'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extensions ['cmake', 'python']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extension 'cmake'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet) by extension 'python'
+[0.854s] DEBUG:colcon.colcon_core.package_identification:Package 'src/darknet_ros/darknet' with type 'cmake' and name 'Darknet'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros) by extension 'ignore'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros) by extension 'ignore_ament_install'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros) by extensions ['colcon_pkg']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros) by extension 'colcon_pkg'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros) by extensions ['colcon_meta']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros) by extension 'colcon_meta'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros) by extensions ['ros']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros) by extension 'ros'
+[0.878s] DEBUG:colcon.colcon_core.package_identification:Package 'src/darknet_ros/darknet_ros' with type 'ros.ament_cmake' and name 'darknet_ros'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros_msgs) by extension 'ignore'
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros_msgs) by extension 'ignore_ament_install'
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros_msgs) by extensions ['colcon_pkg']
+[0.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros_msgs) by extension 'colcon_pkg'
+[0.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros_msgs) by extensions ['colcon_meta']
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros_msgs) by extension 'colcon_meta'
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros_msgs) by extensions ['ros']
+[0.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/darknet_ros_msgs) by extension 'ros'
+[0.888s] DEBUG:colcon.colcon_core.package_identification:Package 'src/darknet_ros/darknet_ros_msgs' with type 'ros.ament_cmake' and name 'darknet_ros_msgs'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/install) by extensions ['ignore', 'ignore_ament_install']
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/install) by extension 'ignore'
+[0.890s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/install) ignored
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/log) by extensions ['ignore', 'ignore_ament_install']
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/log) by extension 'ignore'
+[0.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/darknet_ros/log) ignored
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extensions ['ignore', 'ignore_ament_install']
+[0.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extension 'ignore'
+[0.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extension 'ignore_ament_install'
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extensions ['colcon_pkg']
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extension 'colcon_pkg'
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extensions ['colcon_meta']
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extension 'colcon_meta'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extensions ['ros']
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extension 'ros'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extensions ['cmake', 'python']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extension 'cmake'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extension 'python'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extensions ['python_setup_py']
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense) by extension 'python_setup_py'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_camera_msgs) by extension 'ignore'
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_camera_msgs) by extension 'ignore_ament_install'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_camera_msgs) by extensions ['colcon_pkg']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_camera_msgs) by extension 'colcon_pkg'
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_camera_msgs) by extensions ['colcon_meta']
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_camera_msgs) by extension 'colcon_meta'
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_camera_msgs) by extensions ['ros']
+[0.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_camera_msgs) by extension 'ros'
+[0.908s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_intel_realsense/realsense_camera_msgs' with type 'ros.ament_cmake' and name 'realsense_camera_msgs'
+[0.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_ros2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_ros2_camera) by extension 'ignore'
+[0.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_ros2_camera) by extension 'ignore_ament_install'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_ros2_camera) by extensions ['colcon_pkg']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_ros2_camera) by extension 'colcon_pkg'
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_ros2_camera) by extensions ['colcon_meta']
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_ros2_camera) by extension 'colcon_meta'
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_ros2_camera) by extensions ['ros']
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_intel_realsense/realsense_ros2_camera) by extension 'ros'
+[0.922s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_intel_realsense/realsense_ros2_camera' with type 'ros.ament_cmake' and name 'realsense_ros2_camera'
+[0.922s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.923s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.924s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.924s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.094s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.095s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.112s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/hansol/ros2_ws/install
+[1.120s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 170 installed packages in /opt/ros/dashing
+[1.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.457s] Level 5:colcon.colcon_core.verb:set package 'Darknet' build argument 'cmake_args' from command line to 'None'
+[1.458s] Level 5:colcon.colcon_core.verb:set package 'Darknet' build argument 'cmake_target' from command line to 'None'
+[1.458s] Level 5:colcon.colcon_core.verb:set package 'Darknet' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.458s] Level 5:colcon.colcon_core.verb:set package 'Darknet' build argument 'cmake_clean_cache' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'Darknet' build argument 'cmake_clean_first' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'Darknet' build argument 'cmake_force_configure' from command line to 'False'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'Darknet' build argument 'ament_cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'Darknet' build argument 'catkin_cmake_args' from command line to 'None'
+[1.459s] Level 5:colcon.colcon_core.verb:set package 'Darknet' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.460s] DEBUG:colcon.colcon_core.verb:Building package 'Darknet' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hansol/ros2_ws/build/Darknet', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hansol/ros2_ws/install/Darknet', 'merge_install': False, 'path': '/home/hansol/ros2_ws/src/darknet_ros/darknet', 'symlink_install': True, 'test_result_base': None}
+[1.463s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros_msgs' build argument 'cmake_args' from command line to 'None'
+[1.464s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros_msgs' build argument 'cmake_target' from command line to 'None'
+[1.464s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.464s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.464s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.464s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.465s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.465s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.465s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.465s] DEBUG:colcon.colcon_core.verb:Building package 'darknet_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hansol/ros2_ws/build/darknet_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hansol/ros2_ws/install/darknet_ros_msgs', 'merge_install': False, 'path': '/home/hansol/ros2_ws/src/darknet_ros/darknet_ros_msgs', 'symlink_install': True, 'test_result_base': None}
+[1.469s] Level 5:colcon.colcon_core.verb:set package 'realsense_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[1.469s] Level 5:colcon.colcon_core.verb:set package 'realsense_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[1.469s] Level 5:colcon.colcon_core.verb:set package 'realsense_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.470s] Level 5:colcon.colcon_core.verb:set package 'realsense_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.470s] Level 5:colcon.colcon_core.verb:set package 'realsense_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.470s] Level 5:colcon.colcon_core.verb:set package 'realsense_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.470s] Level 5:colcon.colcon_core.verb:set package 'realsense_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.470s] Level 5:colcon.colcon_core.verb:set package 'realsense_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.471s] Level 5:colcon.colcon_core.verb:set package 'realsense_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.471s] DEBUG:colcon.colcon_core.verb:Building package 'realsense_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hansol/ros2_ws/build/realsense_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hansol/ros2_ws/install/realsense_camera_msgs', 'merge_install': False, 'path': '/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_camera_msgs', 'symlink_install': True, 'test_result_base': None}
+[1.474s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros' build argument 'cmake_args' from command line to 'None'
+[1.474s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros' build argument 'cmake_target' from command line to 'None'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros' build argument 'cmake_clean_first' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros' build argument 'cmake_force_configure' from command line to 'False'
+[1.475s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros' build argument 'ament_cmake_args' from command line to 'None'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[1.476s] Level 5:colcon.colcon_core.verb:set package 'darknet_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.476s] DEBUG:colcon.colcon_core.verb:Building package 'darknet_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hansol/ros2_ws/build/darknet_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hansol/ros2_ws/install/darknet_ros', 'merge_install': False, 'path': '/home/hansol/ros2_ws/src/darknet_ros/darknet_ros', 'symlink_install': True, 'test_result_base': None}
+[1.479s] Level 5:colcon.colcon_core.verb:set package 'realsense_ros2_camera' build argument 'cmake_args' from command line to 'None'
+[1.479s] Level 5:colcon.colcon_core.verb:set package 'realsense_ros2_camera' build argument 'cmake_target' from command line to 'None'
+[1.480s] Level 5:colcon.colcon_core.verb:set package 'realsense_ros2_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.480s] Level 5:colcon.colcon_core.verb:set package 'realsense_ros2_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[1.480s] Level 5:colcon.colcon_core.verb:set package 'realsense_ros2_camera' build argument 'cmake_clean_first' from command line to 'False'
+[1.480s] Level 5:colcon.colcon_core.verb:set package 'realsense_ros2_camera' build argument 'cmake_force_configure' from command line to 'False'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'realsense_ros2_camera' build argument 'ament_cmake_args' from command line to 'None'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'realsense_ros2_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'realsense_ros2_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.481s] DEBUG:colcon.colcon_core.verb:Building package 'realsense_ros2_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hansol/ros2_ws/build/realsense_ros2_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hansol/ros2_ws/install/realsense_ros2_camera', 'merge_install': False, 'path': '/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera', 'symlink_install': True, 'test_result_base': None}
+[1.483s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.488s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.490s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hansol/ros2_ws/src/darknet_ros/darknet_ros_msgs' with build type 'ament_cmake'
+[1.491s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hansol/ros2_ws/src/darknet_ros/darknet_ros_msgs'
+[1.504s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.506s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.506s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.532s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_camera_msgs' with build type 'ament_cmake'
+[1.534s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_camera_msgs'
+[1.538s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.539s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.562s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hansol/ros2_ws/src/darknet_ros/darknet'
+[1.565s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.566s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/darknet_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros_msgs -- -j4 -l4
+[1.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/realsense_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/realsense_camera_msgs -- -j4 -l4
+[1.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/Darknet': /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/Darknet -- -j4 -l4
+[2.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/Darknet' returned '0': /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/Darknet -- -j4 -l4
+[2.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/realsense_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/realsense_camera_msgs -- -j4 -l4
+[2.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/darknet_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros_msgs -- -j4 -l4
+[2.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/realsense_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/realsense_camera_msgs
+[3.121s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/darknet_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/darknet_ros_msgs
+[3.284s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_camera_msgs)
+[3.331s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs' for CMake module files
+[3.340s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs' for CMake config files
+[3.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_camera_msgs', 'cmake_prefix_path')
+[3.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/cmake_prefix_path.ps1'
+[3.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/cmake_prefix_path.dsv'
+[3.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/cmake_prefix_path.sh'
+[3.382s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib'
+[3.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_camera_msgs', 'ld_library_path_lib')
+[3.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/ld_library_path_lib.ps1'
+[3.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/ld_library_path_lib.dsv'
+[3.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/realsense_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/realsense_camera_msgs
+[3.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/ld_library_path_lib.sh'
+[3.403s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/bin'
+[3.403s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/pkgconfig/realsense_camera_msgs.pc'
+[3.405s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages'
+[3.405s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_camera_msgs', 'pythonpath')
+[3.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/pythonpath.ps1'
+[3.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/pythonpath.dsv'
+[3.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/pythonpath.sh'
+[3.417s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/bin'
+[3.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.ps1'
+[3.428s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.dsv'
+[3.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.sh'
+[3.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.bash'
+[3.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.zsh'
+[3.452s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hansol/ros2_ws/install/realsense_camera_msgs/share/colcon-core/packages/realsense_camera_msgs)
+[3.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/Darknet': /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/Darknet
+[3.569s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(darknet_ros_msgs)
+[3.572s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs' for CMake module files
+[3.583s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/darknet_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/darknet_ros_msgs
+[3.585s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs' for CMake config files
+[3.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('darknet_ros_msgs', 'cmake_prefix_path')
+[3.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/cmake_prefix_path.ps1'
+[3.595s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/cmake_prefix_path.dsv'
+[3.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/cmake_prefix_path.sh'
+[3.608s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/lib'
+[3.609s] Level 1:colcon.colcon_core.shell:create_environment_hook('darknet_ros_msgs', 'ld_library_path_lib')
+[3.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/ld_library_path_lib.ps1'
+[3.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/ld_library_path_lib.dsv'
+[3.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/ld_library_path_lib.sh'
+[3.621s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/bin'
+[3.622s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/pkgconfig/darknet_ros_msgs.pc'
+[3.623s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages'
+[3.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('darknet_ros_msgs', 'pythonpath')
+[3.627s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/pythonpath.ps1'
+[3.630s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/pythonpath.dsv'
+[3.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/pythonpath.sh'
+[3.640s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/bin'
+[3.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.ps1'
+[3.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.dsv'
+[3.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.sh'
+[3.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.bash'
+[3.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.zsh'
+[3.664s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hansol/ros2_ws/install/darknet_ros_msgs/share/colcon-core/packages/darknet_ros_msgs)
+[3.698s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Darknet)
+[3.703s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/Darknet' for CMake module files
+[3.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/Darknet' returned '0': /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/Darknet
+[3.711s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/Darknet' for CMake config files
+[3.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('Darknet', 'cmake_prefix_path')
+[3.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/Darknet/share/Darknet/hook/cmake_prefix_path.ps1'
+[3.720s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/Darknet/share/Darknet/hook/cmake_prefix_path.dsv'
+[3.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/Darknet/share/Darknet/hook/cmake_prefix_path.sh'
+[3.730s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/Darknet/bin'
+[3.731s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/Darknet/lib/pkgconfig/Darknet.pc'
+[3.732s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/Darknet/lib/python3.6/site-packages'
+[3.734s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/Darknet/bin'
+[3.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/Darknet/share/Darknet/package.ps1'
+[3.744s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hansol/ros2_ws/install/Darknet/share/Darknet/package.dsv'
+[3.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/Darknet/share/Darknet/package.sh'
+[3.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/Darknet/share/Darknet/package.bash'
+[3.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/Darknet/share/Darknet/package.zsh'
+[3.759s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hansol/ros2_ws/install/Darknet/share/colcon-core/packages/Darknet)
+[3.803s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_camera_msgs)
+[3.806s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs' for CMake module files
+[3.811s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs' for CMake config files
+[3.813s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_camera_msgs', 'cmake_prefix_path')
+[3.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/cmake_prefix_path.ps1'
+[3.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/cmake_prefix_path.dsv'
+[3.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/cmake_prefix_path.sh'
+[3.828s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib'
+[3.829s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_camera_msgs', 'ld_library_path_lib')
+[3.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/ld_library_path_lib.ps1'
+[3.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/ld_library_path_lib.dsv'
+[3.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/ld_library_path_lib.sh'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/bin'
+[3.846s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/pkgconfig/realsense_camera_msgs.pc'
+[3.847s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages'
+[3.848s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_camera_msgs', 'pythonpath')
+[3.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/pythonpath.ps1'
+[3.855s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/pythonpath.dsv'
+[3.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/hook/pythonpath.sh'
+[3.863s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_camera_msgs/bin'
+[3.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.ps1'
+[3.872s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.dsv'
+[3.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.sh'
+[3.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.bash'
+[3.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.zsh'
+[3.889s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hansol/ros2_ws/install/realsense_camera_msgs/share/colcon-core/packages/realsense_camera_msgs)
+[3.892s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera' with build type 'ament_cmake'
+[3.894s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera'
+[3.897s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.897s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.016s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/realsense_ros2_camera': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/realsense_ros2_camera -- -j4 -l4
+[4.152s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(darknet_ros_msgs)
+[4.155s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs' for CMake module files
+[4.159s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs' for CMake config files
+[4.162s] Level 1:colcon.colcon_core.shell:create_environment_hook('darknet_ros_msgs', 'cmake_prefix_path')
+[4.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/cmake_prefix_path.ps1'
+[4.170s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/cmake_prefix_path.dsv'
+[4.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/cmake_prefix_path.sh'
+[4.180s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/lib'
+[4.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('darknet_ros_msgs', 'ld_library_path_lib')
+[4.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/ld_library_path_lib.ps1'
+[4.189s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/ld_library_path_lib.dsv'
+[4.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/ld_library_path_lib.sh'
+[4.195s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/bin'
+[4.196s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/pkgconfig/darknet_ros_msgs.pc'
+[4.198s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages'
+[4.199s] Level 1:colcon.colcon_core.shell:create_environment_hook('darknet_ros_msgs', 'pythonpath')
+[4.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/pythonpath.ps1'
+[4.205s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/pythonpath.dsv'
+[4.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/hook/pythonpath.sh'
+[4.211s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros_msgs/bin'
+[4.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.ps1'
+[4.219s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.dsv'
+[4.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.sh'
+[4.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.bash'
+[4.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.zsh'
+[4.232s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hansol/ros2_ws/install/darknet_ros_msgs/share/colcon-core/packages/darknet_ros_msgs)
+[4.236s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hansol/ros2_ws/src/darknet_ros/darknet_ros' with build type 'ament_cmake'
+[4.237s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hansol/ros2_ws/src/darknet_ros/darknet_ros'
+[4.240s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.241s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/realsense_ros2_camera' returned '0': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/realsense_ros2_camera -- -j4 -l4
+[4.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/darknet_ros': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros -- -j4 -l4
+[4.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/realsense_ros2_camera': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/realsense_ros2_camera
+[4.499s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_ros2_camera)
+[4.502s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera' for CMake module files
+[4.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/realsense_ros2_camera' returned '0': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/realsense_ros2_camera
+[4.510s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera' for CMake config files
+[4.512s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_ros2_camera', 'cmake_prefix_path')
+[4.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/cmake_prefix_path.ps1'
+[4.517s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/cmake_prefix_path.dsv'
+[4.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/cmake_prefix_path.sh'
+[4.524s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/lib'
+[4.525s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin'
+[4.526s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_ros2_camera', 'path')
+[4.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/path.ps1'
+[4.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/path.dsv'
+[4.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/path.sh'
+[4.535s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/lib/pkgconfig/realsense_ros2_camera.pc'
+[4.536s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/lib/python3.6/site-packages'
+[4.537s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin'
+[4.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_ros2_camera', 'pythonscriptspath')
+[4.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/pythonscriptspath.ps1'
+[4.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/pythonscriptspath.dsv'
+[4.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/pythonscriptspath.sh'
+[4.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.ps1'
+[4.557s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.dsv'
+[4.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.sh'
+[4.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.bash'
+[4.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.zsh'
+[4.571s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hansol/ros2_ws/install/realsense_ros2_camera/share/colcon-core/packages/realsense_ros2_camera)
+[4.691s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_ros2_camera)
+[4.694s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera' for CMake module files
+[4.700s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera' for CMake config files
+[4.702s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_ros2_camera', 'cmake_prefix_path')
+[4.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/cmake_prefix_path.ps1'
+[4.708s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/cmake_prefix_path.dsv'
+[4.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/cmake_prefix_path.sh'
+[4.716s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/lib'
+[4.717s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin'
+[4.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_ros2_camera', 'path')
+[4.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/path.ps1'
+[4.722s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/path.dsv'
+[4.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/path.sh'
+[4.728s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/lib/pkgconfig/realsense_ros2_camera.pc'
+[4.729s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/lib/python3.6/site-packages'
+[4.730s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin'
+[4.731s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_ros2_camera', 'pythonscriptspath')
+[4.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/pythonscriptspath.ps1'
+[4.737s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/pythonscriptspath.dsv'
+[4.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/hook/pythonscriptspath.sh'
+[4.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.ps1'
+[4.750s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.dsv'
+[4.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.sh'
+[4.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.bash'
+[4.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.zsh'
+[4.763s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hansol/ros2_ws/install/realsense_ros2_camera/share/colcon-core/packages/realsense_ros2_camera)
+[85.901s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/darknet_ros' returned '0': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros -- -j4 -l4
+[86.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hansol/ros2_ws/build/darknet_ros': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/darknet_ros
+[86.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(darknet_ros)
+[86.814s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros' for CMake module files
+[86.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hansol/ros2_ws/build/darknet_ros' returned '0': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/darknet_ros
+[86.821s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros' for CMake config files
+[86.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('darknet_ros', 'cmake_prefix_path')
+[86.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/hook/cmake_prefix_path.ps1'
+[86.830s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/hook/cmake_prefix_path.dsv'
+[86.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/hook/cmake_prefix_path.sh'
+[86.836s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/lib'
+[86.837s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/bin'
+[86.838s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/lib/pkgconfig/darknet_ros.pc'
+[86.839s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/lib/python3.6/site-packages'
+[86.840s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/bin'
+[86.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.ps1'
+[86.846s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.dsv'
+[86.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.sh'
+[86.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.bash'
+[86.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.zsh'
+[86.854s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hansol/ros2_ws/install/darknet_ros/share/colcon-core/packages/darknet_ros)
+[87.650s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(darknet_ros)
+[87.652s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros' for CMake module files
+[87.657s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros' for CMake config files
+[87.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('darknet_ros', 'cmake_prefix_path')
+[87.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/hook/cmake_prefix_path.ps1'
+[87.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/hook/cmake_prefix_path.dsv'
+[87.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/hook/cmake_prefix_path.sh'
+[87.674s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/lib'
+[87.675s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/bin'
+[87.675s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/lib/pkgconfig/darknet_ros.pc'
+[87.677s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/lib/python3.6/site-packages'
+[87.678s] Level 1:colcon.colcon_core.environment:checking '/home/hansol/ros2_ws/install/darknet_ros/bin'
+[87.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.ps1'
+[87.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.dsv'
+[87.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.sh'
+[87.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.bash'
+[87.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.zsh'
+[87.697s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hansol/ros2_ws/install/darknet_ros/share/colcon-core/packages/darknet_ros)
+[87.700s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[87.707s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[87.708s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[87.710s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[87.742s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[87.743s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[87.744s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[87.771s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[87.774s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hansol/ros2_ws/install/local_setup.ps1'
+[87.793s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hansol/ros2_ws/install/_local_setup_util_ps1.py'
+[87.803s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hansol/ros2_ws/install/setup.ps1'
+[87.812s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hansol/ros2_ws/install/local_setup.sh'
+[87.817s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hansol/ros2_ws/install/_local_setup_util_sh.py'
+[87.819s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hansol/ros2_ws/install/setup.sh'
+[87.828s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hansol/ros2_ws/install/local_setup.bash'
+[87.832s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hansol/ros2_ws/install/setup.bash'
+[87.840s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hansol/ros2_ws/install/local_setup.zsh'
+[87.844s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hansol/ros2_ws/install/setup.zsh'

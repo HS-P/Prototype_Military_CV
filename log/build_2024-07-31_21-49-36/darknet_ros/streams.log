@@ -1,0 +1,47 @@
+[0.121s] Invoking command in '/home/hansol/ros2_ws/build/darknet_ros': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros -- -j4 -l4
+[0.662s] [  2%] [32mBuilding CXX object CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o[0m
+[0.663s] [  2%] [32mBuilding CXX object CMakeFiles/darknet_ros_lib.dir/src/yolo_object_detector_node.cpp.o[0m
+[11.107s] In file included from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/yolo_object_detector_node.cpp:9:0[m[K:
+[11.109s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:47:[m[K [01;31m[Kerror: [m[K‘[01m[KCompressed_Image[m[K’ in namespace ‘[01m[Ksensor_msgs::msg[m[K’ does not name a type
+[11.111s]    void cameraCallback(const sensor_msgs::msg::[01;31m[KCompressed_Image[m[K::ConstSharedPtr& msg);
+[11.115s]                                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[11.118s] In file included from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:10:0[m[K:
+[11.119s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:47:[m[K [01;31m[Kerror: [m[K‘[01m[KCompressed_Image[m[K’ in namespace ‘[01m[Ksensor_msgs::msg[m[K’ does not name a type
+[11.121s]    void cameraCallback(const sensor_msgs::msg::[01;31m[KCompressed_Image[m[K::ConstSharedPtr& msg);
+[11.122s]                                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[11.123s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:79:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[11.124s]    void cameraCallback(const sensor_msgs::msg::Compressed_Image::ConstSharedPtr[01;31m[K&[m[K msg);
+[11.125s]                                                                                [01;31m[K^[m[K
+[11.125s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:79:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[11.126s]    void cameraCallback(const sensor_msgs::msg::Compressed_Image::ConstSharedPtr[01;31m[K&[m[K msg);
+[11.127s]                                                                                [01;31m[K^[m[K
+[11.128s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[11.128s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[11.129s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[11.130s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[11.131s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[11.132s]    void cameraCallback(const sensor_msgs::msg::Compressed_Image::ConstSharedPtr& [01;31m[Kmsg[m[K);
+[11.133s]                                                                                  [01;31m[K^~~[m[K
+[11.134s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:126:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[11.135s]    void cameraCallback(const sensor_msgs::msg::Compressed_Image::ConstSharedPtr& [01;31m[Kmsg[m[K);
+[11.136s]                                                                                  [01;31m[K^~~[m[K
+[11.979s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:232:65:[m[K [01;31m[Kerror: [m[K‘[01m[KCompressed_Image[m[K’ in namespace ‘[01m[Ksensor_msgs::msg[m[K’ does not name a type
+[11.980s]  void YoloObjectDetector::cameraCallback(const sensor_msgs::msg::[01;31m[KCompressed_Image[m[K::ConstSharedPtr & msg)
+[11.982s]                                                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[11.985s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:232:98:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[11.986s]  void YoloObjectDetector::cameraCallback(const sensor_msgs::msg::Compressed_Image::ConstSharedPtr [01;31m[K&[m[K msg)
+[11.989s]                                                                                                   [01;31m[K^[m[K
+[11.991s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:232:98:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[11.992s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:232:100:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[11.993s]  void YoloObjectDetector::cameraCallback(const sensor_msgs::msg::Compressed_Image::ConstSharedPtr & [01;31m[Kmsg[m[K)
+[11.994s]                                                                                                     [01;31m[K^~~[m[K
+[14.533s] CMakeFiles/darknet_ros_lib.dir/build.make:2398: recipe for target 'CMakeFiles/darknet_ros_lib.dir/src/yolo_object_detector_node.cpp.o' failed
+[14.534s] make[2]: *** [CMakeFiles/darknet_ros_lib.dir/src/yolo_object_detector_node.cpp.o] Error 1
+[14.535s] make[2]: *** Waiting for unfinished jobs....
+[20.709s] CMakeFiles/darknet_ros_lib.dir/build.make:2370: recipe for target 'CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o' failed
+[20.711s] make[2]: *** [CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o] Error 1
+[20.713s] make[1]: *** [CMakeFiles/darknet_ros_lib.dir/all] Error 2
+[20.714s] CMakeFiles/Makefile2:111: recipe for target 'CMakeFiles/darknet_ros_lib.dir/all' failed
+[20.714s] make: *** [all] Error 2
+[20.715s] Makefile:145: recipe for target 'all' failed
+[20.720s] Invoked command in '/home/hansol/ros2_ws/build/darknet_ros' returned '2': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros -- -j4 -l4

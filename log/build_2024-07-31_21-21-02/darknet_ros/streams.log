@@ -1,0 +1,56 @@
+[0.132s] Invoking command in '/home/hansol/ros2_ws/build/darknet_ros': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros -- -j4 -l4
+[0.463s] [  1%] [32mBuilding CXX object CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o[0m
+[48.266s] [  2%] [32m[1mLinking CXX static library libdarknet_ros_lib.a[0m
+[49.850s] [ 97%] Built target darknet_ros_lib
+[49.926s] [ 98%] [32m[1mLinking CXX executable darknet_ros[0m
+[55.491s] /usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/dashing/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.5
+[55.492s] /usr/bin/ld: warning: libopencv_imgproc.so.3.2, needed by /opt/ros/dashing/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.4.5
+[55.493s] /usr/bin/ld: warning: libopencv_core.so.3.2, needed by /opt/ros/dashing/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5
+[55.513s] [100%] Built target darknet_ros
+[55.547s] Invoked command in '/home/hansol/ros2_ws/build/darknet_ros' returned '0': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros -- -j4 -l4
+[56.495s] Invoking command in '/home/hansol/ros2_ws/build/darknet_ros': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/darknet_ros
+[56.530s] -- Install configuration: ""
+[56.531s] -- Execute custom install script
+[56.534s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/lib/libdarknet_ros_lib.a
+[56.535s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/lib/darknet_ros/darknet_ros
+[56.539s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov2-tiny.cfg
+[56.540s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov3.cfg
+[56.541s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov4-csp.cfg
+[56.543s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov4-tiny.cfg
+[56.544s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov4.cfg
+[56.545s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov7-tiny.cfg
+[56.546s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/.gitignore
+[56.547s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/how_to_download_weights.txt
+[56.547s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/yolov4-csp.weights
+[56.548s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/yolov4-tiny.weights
+[56.549s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/yolov7-tiny.weights
+[56.550s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//launch/darknet_ros.launch.py
+[56.550s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//launch/yolov4-csp.launch.py
+[56.551s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//launch/yolov4-tiny.launch.py
+[56.551s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//launch/yolov7-tiny.launch.py
+[56.552s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/ros.yaml
+[56.553s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov2-tiny.yaml
+[56.554s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov3.yaml
+[56.554s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov4-csp.yaml
+[56.555s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov4-tiny.yaml
+[56.555s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov4.yaml
+[56.556s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov7-tiny.yaml
+[56.557s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/environment/library_path.sh
+[56.557s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/ament_index/resource_index/package_run_dependencies/darknet_ros
+[56.558s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/ament_index/resource_index/parent_prefix_path/darknet_ros
+[56.562s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/environment/ament_prefix_path.sh
+[56.563s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/environment/path.sh
+[56.564s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/local_setup.bash
+[56.565s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/local_setup.sh
+[56.565s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/local_setup.zsh
+[56.566s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/ament_index/resource_index/packages/darknet_ros
+[56.567s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[56.567s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[56.568s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[56.569s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/darknet_rosConfig.cmake
+[56.570s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/darknet_rosConfig-version.cmake
+[56.571s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.xml
+[56.572s] -- Up-to-date: /home/hansol/ros2_ws/install/darknet_ros/include/
+[56.572s] -- Up-to-date: /home/hansol/ros2_ws/install/darknet_ros/include//darknet_ros
+[56.574s] -- Up-to-date: /home/hansol/ros2_ws/install/darknet_ros/include//darknet_ros/constants.h
+[56.582s] Invoked command in '/home/hansol/ros2_ws/build/darknet_ros' returned '0': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/darknet_ros

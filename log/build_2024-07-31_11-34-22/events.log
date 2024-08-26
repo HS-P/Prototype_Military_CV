@@ -1,0 +1,603 @@
+[0.000000] (-) TimerEvent: {}
+[0.002076] (Darknet) JobQueued: {'identifier': 'Darknet', 'dependencies': OrderedDict()}
+[0.002540] (darknet_ros_msgs) JobQueued: {'identifier': 'darknet_ros_msgs', 'dependencies': OrderedDict()}
+[0.004321] (realsense_camera_msgs) JobQueued: {'identifier': 'realsense_camera_msgs', 'dependencies': OrderedDict()}
+[0.005608] (darknet_ros) JobQueued: {'identifier': 'darknet_ros', 'dependencies': OrderedDict([('darknet_ros_msgs', '/home/hansol/ros2_ws/install/darknet_ros_msgs')])}
+[0.007663] (realsense_ros2_camera) JobQueued: {'identifier': 'realsense_ros2_camera', 'dependencies': OrderedDict([('realsense_camera_msgs', '/home/hansol/ros2_ws/install/realsense_camera_msgs')])}
+[0.007999] (darknet_ros_msgs) JobStarted: {'identifier': 'darknet_ros_msgs'}
+[0.052452] (realsense_camera_msgs) JobStarted: {'identifier': 'realsense_camera_msgs'}
+[0.087845] (Darknet) JobStarted: {'identifier': 'Darknet'}
+[0.099359] (-) TimerEvent: {}
+[0.136188] (darknet_ros_msgs) JobProgress: {'identifier': 'darknet_ros_msgs', 'progress': 'cmake'}
+[0.143585] (darknet_ros_msgs) JobProgress: {'identifier': 'darknet_ros_msgs', 'progress': 'build'}
+[0.149038] (darknet_ros_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/hansol/ros2_ws/build/darknet_ros_msgs', '--', '-j4', '-l4'], 'cwd': '/home/hansol/ros2_ws/build/darknet_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/hansol'), ('USER', 'hansol'), ('SSH_CLIENT', '192.168.68.106 53652 22'), ('LD_LIBRARY_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/hansol'), ('HOME', '/home/hansol'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '32.7.5'), ('JETSON_MODEL', 'quill'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hansol/ros2_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'hansol'), ('JETSON_SERIAL_NUMBER', '0323717014982'), ('JETSON_MODULE', 'NVIDIA Jetson TX2'), ('_', '/usr/bin/colcon'), ('JETSON_CODENAME', 'Quill'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin:/home/hansol/.local/bin:/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra186'), ('AMENT_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/opt/ros/dashing'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3310-0000-A0'), ('LC_ALL', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '6.2'), ('PWD', '/home/hansol/ros2_ws/build/darknet_ros_msgs'), ('SSH_CONNECTION', '192.168.68.106 53652 192.168.68.105 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.5'), ('CMAKE_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing'), ('JETSON_P_NUMBER', 'p3310-1000')]), 'shell': False}
+[0.175627] (realsense_camera_msgs) JobProgress: {'identifier': 'realsense_camera_msgs', 'progress': 'cmake'}
+[0.180975] (realsense_camera_msgs) JobProgress: {'identifier': 'realsense_camera_msgs', 'progress': 'build'}
+[0.182812] (realsense_camera_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/hansol/ros2_ws/build/realsense_camera_msgs', '--', '-j4', '-l4'], 'cwd': '/home/hansol/ros2_ws/build/realsense_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/hansol'), ('USER', 'hansol'), ('SSH_CLIENT', '192.168.68.106 53652 22'), ('LD_LIBRARY_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/hansol'), ('HOME', '/home/hansol'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '32.7.5'), ('JETSON_MODEL', 'quill'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hansol/ros2_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'hansol'), ('JETSON_SERIAL_NUMBER', '0323717014982'), ('JETSON_MODULE', 'NVIDIA Jetson TX2'), ('_', '/usr/bin/colcon'), ('JETSON_CODENAME', 'Quill'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin:/home/hansol/.local/bin:/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra186'), ('AMENT_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/opt/ros/dashing'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3310-0000-A0'), ('LC_ALL', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '6.2'), ('PWD', '/home/hansol/ros2_ws/build/realsense_camera_msgs'), ('SSH_CONNECTION', '192.168.68.106 53652 192.168.68.105 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.5'), ('CMAKE_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing'), ('JETSON_P_NUMBER', 'p3310-1000')]), 'shell': False}
+[0.199766] (-) TimerEvent: {}
+[0.209045] (Darknet) JobProgress: {'identifier': 'Darknet', 'progress': 'cmake'}
+[0.215291] (Darknet) JobProgress: {'identifier': 'Darknet', 'progress': 'build'}
+[0.217387] (Darknet) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/hansol/ros2_ws/build/Darknet', '--', '-j4', '-l4'], 'cwd': '/home/hansol/ros2_ws/build/Darknet', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/hansol'), ('USER', 'hansol'), ('SSH_CLIENT', '192.168.68.106 53652 22'), ('LD_LIBRARY_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/hansol'), ('HOME', '/home/hansol'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '32.7.5'), ('JETSON_MODEL', 'quill'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hansol/ros2_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'hansol'), ('JETSON_SERIAL_NUMBER', '0323717014982'), ('JETSON_MODULE', 'NVIDIA Jetson TX2'), ('_', '/usr/bin/colcon'), ('JETSON_CODENAME', 'Quill'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin:/home/hansol/.local/bin:/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra186'), ('AMENT_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/opt/ros/dashing'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3310-0000-A0'), ('LC_ALL', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '6.2'), ('PWD', '/home/hansol/ros2_ws/build/Darknet'), ('SSH_CONNECTION', '192.168.68.106 53652 192.168.68.105 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.5'), ('CMAKE_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet'), ('JETSON_P_NUMBER', 'p3310-1000')]), 'shell': False}
+[0.258996] (Darknet) StdoutLine: {'line': b"Change Dir: '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.261214] (Darknet) StdoutLine: {'line': b'\n'}
+[0.262398] (Darknet) StdoutLine: {'line': b'Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile -j4 -l4\n'}
+[0.279015] (Darknet) StdoutLine: {'line': b'/usr/local/bin/cmake -S/home/hansol/ros2_ws/src/darknet_ros/darknet -B/home/hansol/ros2_ws/build/Darknet --check-build-system CMakeFiles/Makefile.cmake 0\n'}
+[0.300006] (-) TimerEvent: {}
+[0.303756] (Darknet) StdoutLine: {'line': b'/usr/local/bin/cmake -E cmake_progress_start /home/hansol/ros2_ws/build/Darknet/CMakeFiles /home/hansol/ros2_ws/build/Darknet//CMakeFiles/progress.marks\n'}
+[0.321779] (Darknet) StdoutLine: {'line': b'/usr/bin/make  -f CMakeFiles/Makefile2 all\n'}
+[0.330985] (darknet_ros_msgs) StdoutLine: {'line': b'[  1%] Built target darknet_ros_msgs__cpp\n'}
+[0.332989] (Darknet) StdoutLine: {'line': b"make[1]: Entering directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.334094] (Darknet) StdoutLine: {'line': b'/usr/bin/make  -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/depend\n'}
+[0.339099] (Darknet) StdoutLine: {'line': b'/usr/bin/make  -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/depend\n'}
+[0.363481] (realsense_camera_msgs) StdoutLine: {'line': b'[ 10%] Built target realsense_camera_msgs__rosidl_generator_c\n'}
+[0.369195] (darknet_ros_msgs) StdoutLine: {'line': b'[ 13%] Built target darknet_ros_msgs__rosidl_generator_c\n'}
+[0.383513] (realsense_camera_msgs) StdoutLine: {'line': b'[ 13%] Built target realsense_camera_msgs__cpp\n'}
+[0.400395] (-) TimerEvent: {}
+[0.430389] (Darknet) StdoutLine: {'line': b"make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.431631] (Darknet) StdoutLine: {'line': b'cd /home/hansol/ros2_ws/build/Darknet && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet/CMakeFiles/darknet.dir/DependInfo.cmake "--color="\n'}
+[0.450908] (darknet_ros_msgs) StdoutLine: {'line': b'[ 24%] Built target darknet_ros_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.454503] (Darknet) StdoutLine: {'line': b"make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.455750] (Darknet) StdoutLine: {'line': b'cd /home/hansol/ros2_ws/build/Darknet && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet/CMakeFiles/dark.dir/DependInfo.cmake "--color="\n'}
+[0.499185] (realsense_camera_msgs) StdoutLine: {'line': b'[ 24%] Built target realsense_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[0.500436] (-) TimerEvent: {}
+[0.505470] (Darknet) StdoutLine: {'line': b"make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.506881] (Darknet) StdoutLine: {'line': b'/usr/bin/make  -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/build\n'}
+[0.517349] (darknet_ros_msgs) StdoutLine: {'line': b'[ 35%] Built target darknet_ros_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.523959] (realsense_camera_msgs) StdoutLine: {'line': b'[ 35%] Built target realsense_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.561812] (realsense_camera_msgs) StdoutLine: {'line': b'[ 45%] Built target realsense_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.569951] (darknet_ros_msgs) StdoutLine: {'line': b'[ 58%] Built target darknet_ros_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.573029] (darknet_ros_msgs) StdoutLine: {'line': b'[ 49%] Built target darknet_ros_msgs__rosidl_typesupport_introspection_c\n'}
+[0.596083] (Darknet) StdoutLine: {'line': b"make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.603718] (Darknet) StdoutLine: {'line': b'/usr/bin/make  -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/build\n'}
+[0.604966] (-) TimerEvent: {}
+[0.609525] (darknet_ros_msgs) StdoutLine: {'line': b'[ 69%] Built target darknet_ros_msgs__rosidl_typesupport_cpp\n'}
+[0.622072] (realsense_camera_msgs) StdoutLine: {'line': b'[ 56%] Built target realsense_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.638826] (Darknet) StdoutLine: {'line': b"make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.641771] (Darknet) StdoutLine: {'line': b"make[2]: Nothing to be done for 'CMakeFiles/darknet.dir/build'.\n"}
+[0.643596] (Darknet) StdoutLine: {'line': b"make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.645033] (darknet_ros_msgs) StdoutLine: {'line': b'[ 81%] Built target darknet_ros_msgs__rosidl_typesupport_c\n'}
+[0.671820] (Darknet) StdoutLine: {'line': b'[ 48%] Built target darknet\n'}
+[0.686546] (realsense_camera_msgs) StdoutLine: {'line': b'[ 67%] Built target realsense_camera_msgs__rosidl_typesupport_cpp\n'}
+[0.702259] (realsense_camera_msgs) StdoutLine: {'line': b'[ 78%] Built target realsense_camera_msgs__rosidl_typesupport_c\n'}
+[0.705438] (Darknet) StdoutLine: {'line': b"make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.706547] (-) TimerEvent: {}
+[0.710815] (Darknet) StdoutLine: {'line': b"make[2]: Nothing to be done for 'CMakeFiles/dark.dir/build'.\n"}
+[0.712034] (Darknet) StdoutLine: {'line': b"make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.717704] (darknet_ros_msgs) StdoutLine: {'line': b'[ 81%] Built target darknet_ros_msgs\n'}
+[0.732577] (Darknet) StdoutLine: {'line': b'[ 97%] Built target dark\n'}
+[0.733930] (Darknet) StdoutLine: {'line': b'/usr/bin/make  -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/depend\n'}
+[0.735158] (Darknet) StdoutLine: {'line': b'/usr/bin/make  -f CMakeFiles/uselib.dir/build.make CMakeFiles/uselib.dir/depend\n'}
+[0.743742] (Darknet) StdoutLine: {'line': b"make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.745472] (Darknet) StdoutLine: {'line': b'cd /home/hansol/ros2_ws/build/Darknet && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet/CMakeFiles/uselib_track.dir/DependInfo.cmake "--color="\n'}
+[0.757298] (Darknet) StdoutLine: {'line': b"make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.760172] (Darknet) StdoutLine: {'line': b'cd /home/hansol/ros2_ws/build/Darknet && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet/CMakeFiles/uselib.dir/DependInfo.cmake "--color="\n'}
+[0.762400] (realsense_camera_msgs) StdoutLine: {'line': b'[ 78%] Built target realsense_camera_msgs\n'}
+[0.771584] (Darknet) StdoutLine: {'line': b"make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.774197] (darknet_ros_msgs) StdoutLine: {'line': b'[ 83%] Built target darknet_ros_msgs__py\n'}
+[0.775742] (Darknet) StdoutLine: {'line': b'/usr/bin/make  -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/build\n'}
+[0.788423] (Darknet) StdoutLine: {'line': b"make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.790287] (Darknet) StdoutLine: {'line': b"make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.791549] (Darknet) StdoutLine: {'line': b"make[2]: Nothing to be done for 'CMakeFiles/uselib_track.dir/build'.\n"}
+[0.798057] (Darknet) StdoutLine: {'line': b'/usr/bin/make  -f CMakeFiles/uselib.dir/build.make CMakeFiles/uselib.dir/build\n'}
+[0.799350] (Darknet) StdoutLine: {'line': b"make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.806995] (-) TimerEvent: {}
+[0.813453] (Darknet) StdoutLine: {'line': b'[ 99%] Built target uselib_track\n'}
+[0.818268] (Darknet) StdoutLine: {'line': b"make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.819438] (Darknet) StdoutLine: {'line': b"make[2]: Nothing to be done for 'CMakeFiles/uselib.dir/build'.\n"}
+[0.820147] (Darknet) StdoutLine: {'line': b"make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.833236] (realsense_camera_msgs) StdoutLine: {'line': b'[ 81%] Built target realsense_camera_msgs__py\n'}
+[0.839140] (Darknet) StdoutLine: {'line': b'[100%] Built target uselib\n'}
+[0.845349] (darknet_ros_msgs) StdoutLine: {'line': b'[ 92%] Built target darknet_ros_msgs__python\n'}
+[0.849148] (Darknet) StdoutLine: {'line': b"make[1]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'\n"}
+[0.850805] (Darknet) StdoutLine: {'line': b'/usr/local/bin/cmake -E cmake_progress_start /home/hansol/ros2_ws/build/Darknet/CMakeFiles 0\n'}
+[0.887956] (Darknet) StdoutLine: {'line': b'\n'}
+[0.922605] (Darknet) CommandEnded: {'returncode': 0}
+[0.937978] (-) TimerEvent: {}
+[0.940002] (realsense_camera_msgs) StdoutLine: {'line': b'[ 89%] Built target realsense_camera_msgs__python\n'}
+[0.955826] (darknet_ros_msgs) StdoutLine: {'line': b'[ 96%] Built target darknet_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.999205] (darknet_ros_msgs) StdoutLine: {'line': b'[100%] Built target darknet_ros_msgs__rosidl_typesupport_c__pyext\n'}
+[1.026076] (realsense_camera_msgs) StdoutLine: {'line': b'[ 94%] Built target realsense_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[1.037737] (darknet_ros_msgs) CommandEnded: {'returncode': 0}
+[1.041009] (-) TimerEvent: {}
+[1.062616] (realsense_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.081705] (realsense_camera_msgs) CommandEnded: {'returncode': 0}
+[1.141601] (-) TimerEvent: {}
+[1.244698] (-) TimerEvent: {}
+[1.347229] (-) TimerEvent: {}
+[1.395703] (realsense_camera_msgs) JobProgress: {'identifier': 'realsense_camera_msgs', 'progress': 'install'}
+[1.438213] (realsense_camera_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/hansol/ros2_ws/build/realsense_camera_msgs'], 'cwd': '/home/hansol/ros2_ws/build/realsense_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/hansol'), ('USER', 'hansol'), ('SSH_CLIENT', '192.168.68.106 53652 22'), ('LD_LIBRARY_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/hansol'), ('HOME', '/home/hansol'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '32.7.5'), ('JETSON_MODEL', 'quill'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hansol/ros2_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'hansol'), ('JETSON_SERIAL_NUMBER', '0323717014982'), ('JETSON_MODULE', 'NVIDIA Jetson TX2'), ('_', '/usr/bin/colcon'), ('JETSON_CODENAME', 'Quill'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin:/home/hansol/.local/bin:/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra186'), ('AMENT_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/opt/ros/dashing'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3310-0000-A0'), ('LC_ALL', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '6.2'), ('PWD', '/home/hansol/ros2_ws/build/realsense_camera_msgs'), ('SSH_CONNECTION', '192.168.68.106 53652 192.168.68.105 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.5'), ('CMAKE_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing'), ('JETSON_P_NUMBER', 'p3310-1000')]), 'shell': False}
+[1.465996] (-) TimerEvent: {}
+[1.488414] (realsense_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.493602] (realsense_camera_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.494717] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense_camera_msgs\n'}
+[1.498995] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/librealsense_camera_msgs__rosidl_typesupport_c.so\n'}
+[1.502522] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/environment/library_path.sh\n'}
+[1.505821] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/librealsense_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[1.508512] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[1.509726] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info__rosidl_typesupport_fastrtps_c.h\n'}
+[1.510692] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.512527] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/librealsense_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.514741] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics.h\n'}
+[1.517653] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics__functions.h\n'}
+[1.519957] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics__struct.h\n'}
+[1.520969] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics__type_support.h\n'}
+[1.522049] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info.h\n'}
+[1.524552] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info__functions.h\n'}
+[1.525782] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info__struct.h\n'}
+[1.526639] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info__type_support.h\n'}
+[1.528408] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.531022] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/librealsense_camera_msgs__rosidl_generator_c.so\n'}
+[1.531881] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.532852] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.534728] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.535998] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/librealsense_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.537205] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics.hpp\n'}
+[1.562282] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics__struct.hpp\n'}
+[1.569744] (-) TimerEvent: {}
+[1.571229] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics__traits.hpp\n'}
+[1.573310] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info.hpp\n'}
+[1.574092] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info__struct.hpp\n'}
+[1.574711] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info__traits.hpp\n'}
+[1.575227] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[1.575760] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info__rosidl_typesupport_introspection_c.h\n'}
+[1.576320] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.581434] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/librealsense_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[1.585451] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.587833] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/include/realsense_camera_msgs/msg/imu_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.588908] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/librealsense_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.589729] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/environment/pythonpath.sh\n'}
+[1.590566] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages/realsense_camera_msgs/__init__.py\n'}
+[1.591403] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages/realsense_camera_msgs/msg/__init__.py\n'}
+[1.592212] (darknet_ros_msgs) JobProgress: {'identifier': 'darknet_ros_msgs', 'progress': 'install'}
+[1.592601] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages/realsense_camera_msgs/msg/_extrinsics.py\n'}
+[1.593463] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages/realsense_camera_msgs/msg/_imu_info.py\n'}
+[1.594437] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages/realsense_camera_msgs/realsense_camera_msgs_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[1.595139] (darknet_ros_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/hansol/ros2_ws/build/darknet_ros_msgs'], 'cwd': '/home/hansol/ros2_ws/build/darknet_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/hansol'), ('USER', 'hansol'), ('SSH_CLIENT', '192.168.68.106 53652 22'), ('LD_LIBRARY_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/hansol'), ('HOME', '/home/hansol'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '32.7.5'), ('JETSON_MODEL', 'quill'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hansol/ros2_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'hansol'), ('JETSON_SERIAL_NUMBER', '0323717014982'), ('JETSON_MODULE', 'NVIDIA Jetson TX2'), ('_', '/usr/bin/colcon'), ('JETSON_CODENAME', 'Quill'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin:/home/hansol/.local/bin:/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra186'), ('AMENT_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/opt/ros/dashing'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3310-0000-A0'), ('LC_ALL', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '6.2'), ('PWD', '/home/hansol/ros2_ws/build/darknet_ros_msgs'), ('SSH_CONNECTION', '192.168.68.106 53652 192.168.68.105 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.5'), ('CMAKE_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing'), ('JETSON_P_NUMBER', 'p3310-1000')]), 'shell': False}
+[1.599020] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages/realsense_camera_msgs/realsense_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[1.600814] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/lib/librealsense_camera_msgs__python.so\n'}
+[1.601689] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/msg/IMUInfo.idl\n'}
+[1.602712] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/msg/Extrinsics.idl\n'}
+[1.603566] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/msg/IMUInfo.msg\n'}
+[1.604464] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/msg/Extrinsics.msg\n'}
+[1.605318] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense_camera_msgs\n'}
+[1.606065] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense_camera_msgs\n'}
+[1.606772] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/environment/ament_prefix_path.sh\n'}
+[1.607531] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/environment/path.sh\n'}
+[1.608369] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/local_setup.bash\n'}
+[1.609144] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/local_setup.sh\n'}
+[1.609963] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/local_setup.zsh\n'}
+[1.610602] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/ament_index/resource_index/packages/realsense_camera_msgs\n'}
+[1.611491] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.612193] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.613024] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.613676] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.614547] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/cmake/realsense_camera_msgsConfig.cmake\n'}
+[1.615481] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/cmake/realsense_camera_msgsConfig-version.cmake\n'}
+[1.616536] (realsense_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/package.xml\n'}
+[1.618303] (darknet_ros_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.619363] (darknet_ros_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.620127] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/darknet_ros_msgs\n'}
+[1.621136] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects.hpp\n'}
+[1.621875] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects__struct.hpp\n'}
+[1.622572] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects__traits.hpp\n'}
+[1.623273] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box.hpp\n'}
+[1.623973] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box__struct.hpp\n'}
+[1.631890] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box__traits.hpp\n'}
+[1.633083] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes.hpp\n'}
+[1.634080] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes__struct.hpp\n'}
+[1.635660] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes__traits.hpp\n'}
+[1.636552] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count.hpp\n'}
+[1.637383] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count__struct.hpp\n'}
+[1.640499] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count__traits.hpp\n'}
+[1.644645] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects.h\n'}
+[1.645716] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects__functions.h\n'}
+[1.646743] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects__struct.h\n'}
+[1.647512] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects__type_support.h\n'}
+[1.649218] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box.h\n'}
+[1.649964] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box__functions.h\n'}
+[1.650701] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box__struct.h\n'}
+[1.651400] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box__type_support.h\n'}
+[1.656918] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes.h\n'}
+[1.662945] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes__functions.h\n'}
+[1.666451] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes__struct.h\n'}
+[1.667213] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes__type_support.h\n'}
+[1.667877] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count.h\n'}
+[1.670563] (-) TimerEvent: {}
+[1.672979] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count__functions.h\n'}
+[1.674464] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count__struct.h\n'}
+[1.676538] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count__type_support.h\n'}
+[1.677630] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.678567] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/environment/library_path.sh\n'}
+[1.679719] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/libdarknet_ros_msgs__rosidl_generator_c.so\n'}
+[1.681483] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/libdarknet_ros_msgs__rosidl_typesupport_c.so\n'}
+[1.682303] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/libdarknet_ros_msgs__rosidl_typesupport_cpp.so\n'}
+[1.683957] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects__rosidl_typesupport_introspection_c.h\n'}
+[1.685169] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box__rosidl_typesupport_introspection_c.h\n'}
+[1.685930] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes__rosidl_typesupport_introspection_c.h\n'}
+[1.687419] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count__rosidl_typesupport_introspection_c.h\n'}
+[1.688197] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.689095] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/libdarknet_ros_msgs__rosidl_typesupport_introspection_c.so\n'}
+[1.689860] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.690548] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.691147] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.691762] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.692575] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/libdarknet_ros_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.693424] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects__rosidl_typesupport_fastrtps_c.h\n'}
+[1.694428] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box__rosidl_typesupport_fastrtps_c.h\n'}
+[1.695387] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes__rosidl_typesupport_fastrtps_c.h\n'}
+[1.696830] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count__rosidl_typesupport_fastrtps_c.h\n'}
+[1.697810] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.701331] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/libdarknet_ros_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.705203] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/action/check_for_objects__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.707625] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.708538] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/bounding_boxes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.711565] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/object_count__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.712619] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/include/darknet_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.714679] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/libdarknet_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.715575] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/environment/pythonpath.sh\n'}
+[1.716658] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages/darknet_ros_msgs/__init__.py\n'}
+[1.717737] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages/darknet_ros_msgs/msg/__init__.py\n'}
+[1.718651] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages/darknet_ros_msgs/msg/_bounding_box.py\n'}
+[1.719541] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages/darknet_ros_msgs/msg/_bounding_boxes.py\n'}
+[1.721436] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages/darknet_ros_msgs/msg/_object_count.py\n'}
+[1.722487] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages/darknet_ros_msgs/action/__init__.py\n'}
+[1.723234] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages/darknet_ros_msgs/action/_check_for_objects.py\n'}
+[1.724036] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages/darknet_ros_msgs/darknet_ros_msgs_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[1.727779] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages/darknet_ros_msgs/darknet_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[1.729195] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/lib/libdarknet_ros_msgs__python.so\n'}
+[1.730150] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/msg/BoundingBox.idl\n'}
+[1.730917] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/msg/BoundingBoxes.idl\n'}
+[1.733787] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/msg/ObjectCount.idl\n'}
+[1.736689] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/action/CheckForObjects.idl\n'}
+[1.739682] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/msg/BoundingBox.msg\n'}
+[1.740960] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/msg/BoundingBoxes.msg\n'}
+[1.743389] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/msg/ObjectCount.msg\n'}
+[1.748693] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/action/CheckForObjects.action\n'}
+[1.749989] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/ament_index/resource_index/package_run_dependencies/darknet_ros_msgs\n'}
+[1.751712] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/ament_index/resource_index/parent_prefix_path/darknet_ros_msgs\n'}
+[1.753430] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/environment/ament_prefix_path.sh\n'}
+[1.754492] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/environment/path.sh\n'}
+[1.755617] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/local_setup.bash\n'}
+[1.756641] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/local_setup.sh\n'}
+[1.757546] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/local_setup.zsh\n'}
+[1.758252] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/ament_index/resource_index/packages/darknet_ros_msgs\n'}
+[1.759118] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.760010] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.768373] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.769547] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.770410] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/cmake/darknet_ros_msgsConfig.cmake\n'}
+[1.771066] (-) TimerEvent: {}
+[1.771813] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/cmake/darknet_ros_msgsConfig-version.cmake\n'}
+[1.775676] (darknet_ros_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/package.xml\n'}
+[1.866973] (realsense_camera_msgs) CommandEnded: {'returncode': 0}
+[1.871456] (-) TimerEvent: {}
+[1.973421] (-) TimerEvent: {}
+[2.054783] (darknet_ros_msgs) CommandEnded: {'returncode': 0}
+[2.073696] (-) TimerEvent: {}
+[2.175125] (-) TimerEvent: {}
+[2.182573] (Darknet) JobProgress: {'identifier': 'Darknet', 'progress': 'install'}
+[2.184755] (Darknet) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/hansol/ros2_ws/build/Darknet'], 'cwd': '/home/hansol/ros2_ws/build/Darknet', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/hansol'), ('USER', 'hansol'), ('SSH_CLIENT', '192.168.68.106 53652 22'), ('LD_LIBRARY_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64:'), ('SHLVL', '1'), ('OLDPWD', '/home/hansol'), ('HOME', '/home/hansol'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '32.7.5'), ('JETSON_MODEL', 'quill'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hansol/ros2_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'hansol'), ('JETSON_SERIAL_NUMBER', '0323717014982'), ('JETSON_MODULE', 'NVIDIA Jetson TX2'), ('_', '/usr/bin/colcon'), ('JETSON_CODENAME', 'Quill'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin:/home/hansol/.local/bin:/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra186'), ('AMENT_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/opt/ros/dashing'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3310-0000-A0'), ('LC_ALL', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '6.2'), ('PWD', '/home/hansol/ros2_ws/build/Darknet'), ('SSH_CONNECTION', '192.168.68.106 53652 192.168.68.105 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.5'), ('CMAKE_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet'), ('JETSON_P_NUMBER', 'p3310-1000')]), 'shell': False}
+[2.245194] (Darknet) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[2.249330] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/src/darknet_ros/darknet/libdarknet.so\n'}
+[2.250240] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/install/Darknet/include/darknet/darknet.h\n'}
+[2.255048] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/install/Darknet/include/darknet/yolo_v2_class.hpp\n'}
+[2.258304] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/src/darknet_ros/darknet/uselib\n'}
+[2.259385] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/src/darknet_ros/darknet/darknet\n'}
+[2.260110] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/src/darknet_ros/darknet/uselib_track\n'}
+[2.261060] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/install/Darknet/share/darknet/DarknetTargets.cmake\n'}
+[2.262082] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/install/Darknet/share/darknet/DarknetTargets-release.cmake\n'}
+[2.262726] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/install/Darknet/share/darknet/DarknetConfig.cmake\n'}
+[2.263458] (Darknet) StdoutLine: {'line': b'-- Up-to-date: /home/hansol/ros2_ws/install/Darknet/share/darknet/DarknetConfigVersion.cmake\n'}
+[2.269311] (Darknet) CommandEnded: {'returncode': 0}
+[2.280791] (-) TimerEvent: {}
+[2.328600] (Darknet) JobEnded: {'identifier': 'Darknet', 'rc': 0}
+[2.381172] (-) TimerEvent: {}
+[2.413285] (realsense_camera_msgs) JobEnded: {'identifier': 'realsense_camera_msgs', 'rc': 0}
+[2.426514] (realsense_ros2_camera) JobStarted: {'identifier': 'realsense_ros2_camera'}
+[2.481814] (-) TimerEvent: {}
+[2.493598] (realsense_ros2_camera) JobProgress: {'identifier': 'realsense_ros2_camera', 'progress': 'cmake'}
+[2.498475] (realsense_ros2_camera) JobProgress: {'identifier': 'realsense_ros2_camera', 'progress': 'build'}
+[2.500537] (realsense_ros2_camera) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/hansol/ros2_ws/build/realsense_ros2_camera', '--', '-j4', '-l4'], 'cwd': '/home/hansol/ros2_ws/build/realsense_ros2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/hansol'), ('USER', 'hansol'), ('SSH_CLIENT', '192.168.68.106 53652 22'), ('LD_LIBRARY_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64'), ('SHLVL', '1'), ('OLDPWD', '/home/hansol'), ('HOME', '/home/hansol'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '32.7.5'), ('JETSON_MODEL', 'quill'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hansol/ros2_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'hansol'), ('JETSON_SERIAL_NUMBER', '0323717014982'), ('JETSON_MODULE', 'NVIDIA Jetson TX2'), ('_', '/usr/bin/colcon'), ('JETSON_CODENAME', 'Quill'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin:/home/hansol/.local/bin:/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra186'), ('AMENT_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/opt/ros/dashing'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3310-0000-A0'), ('LC_ALL', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '6.2'), ('PWD', '/home/hansol/ros2_ws/build/realsense_ros2_camera'), ('SSH_CONNECTION', '192.168.68.106 53652 192.168.68.105 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.5'), ('CMAKE_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing'), ('JETSON_P_NUMBER', 'p3310-1000')]), 'shell': False}
+[2.582106] (-) TimerEvent: {}
+[2.685605] (-) TimerEvent: {}
+[2.692804] (realsense_ros2_camera) StdoutLine: {'line': b'[100%] Built target realsense_ros2_camera\n'}
+[2.712504] (darknet_ros_msgs) JobEnded: {'identifier': 'darknet_ros_msgs', 'rc': 0}
+[2.720887] (darknet_ros) JobStarted: {'identifier': 'darknet_ros'}
+[2.767387] (realsense_ros2_camera) CommandEnded: {'returncode': 0}
+[2.787782] (-) TimerEvent: {}
+[2.814103] (darknet_ros) JobProgress: {'identifier': 'darknet_ros', 'progress': 'cmake'}
+[2.820135] (darknet_ros) JobProgress: {'identifier': 'darknet_ros', 'progress': 'build'}
+[2.822855] (darknet_ros) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/hansol/ros2_ws/build/darknet_ros', '--', '-j4', '-l4'], 'cwd': '/home/hansol/ros2_ws/build/darknet_ros', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/hansol'), ('USER', 'hansol'), ('SSH_CLIENT', '192.168.68.106 53652 22'), ('LD_LIBRARY_PATH', '/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64'), ('SHLVL', '1'), ('OLDPWD', '/home/hansol'), ('HOME', '/home/hansol'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '32.7.5'), ('JETSON_MODEL', 'quill'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hansol/ros2_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'hansol'), ('JETSON_SERIAL_NUMBER', '0323717014982'), ('JETSON_MODULE', 'NVIDIA Jetson TX2'), ('_', '/usr/bin/colcon'), ('JETSON_CODENAME', 'Quill'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin:/home/hansol/.local/bin:/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra186'), ('AMENT_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/opt/ros/dashing'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3310-0000-A0'), ('LC_ALL', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '6.2'), ('PWD', '/home/hansol/ros2_ws/build/darknet_ros'), ('SSH_CONNECTION', '192.168.68.106 53652 192.168.68.105 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.5'), ('CMAKE_PREFIX_PATH', '/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing'), ('JETSON_P_NUMBER', 'p3310-1000')]), 'shell': False}
+[2.887493] (-) TimerEvent: {}
+[2.900284] (realsense_ros2_camera) JobProgress: {'identifier': 'realsense_ros2_camera', 'progress': 'install'}
+[2.902002] (realsense_ros2_camera) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/hansol/ros2_ws/build/realsense_ros2_camera'], 'cwd': '/home/hansol/ros2_ws/build/realsense_ros2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/hansol'), ('USER', 'hansol'), ('SSH_CLIENT', '192.168.68.106 53652 22'), ('LD_LIBRARY_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64'), ('SHLVL', '1'), ('OLDPWD', '/home/hansol'), ('HOME', '/home/hansol'), ('SSH_TTY', '/dev/pts/1'), ('JETSON_L4T', '32.7.5'), ('JETSON_MODEL', 'quill'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hansol/ros2_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'hansol'), ('JETSON_SERIAL_NUMBER', '0323717014982'), ('JETSON_MODULE', 'NVIDIA Jetson TX2'), ('_', '/usr/bin/colcon'), ('JETSON_CODENAME', 'Quill'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '5'), ('TERM', 'xterm-256color'), ('PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera/bin:/home/hansol/.local/bin:/opt/ros/dashing/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra186'), ('AMENT_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/opt/ros/dashing'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3310-0000-A0'), ('LC_ALL', 'en_US.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '6.2'), ('PWD', '/home/hansol/ros2_ws/build/realsense_ros2_camera'), ('SSH_CONNECTION', '192.168.68.106 53652 192.168.68.105 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.5'), ('CMAKE_PREFIX_PATH', '/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing'), ('JETSON_P_NUMBER', 'p3310-1000')]), 'shell': False}
+[2.959851] (realsense_ros2_camera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.965973] (realsense_ros2_camera) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.966874] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/bin/realsense_ros2_camera\n'}
+[2.967558] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/lib/realsense_ros2_camera/realsense_ros2_camera\n'}
+[2.969874] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/include/realsense_ros2_camera/constants.hpp\n'}
+[2.973497] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/default.rviz\n'}
+[2.974580] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/realsense2_to_laserscan.py\n'}
+[2.976389] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/ros2_intel_realsense.launch.py\n'}
+[2.978952] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/rs.launch.py\n'}
+[2.979873] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/ament_index/resource_index/package_run_dependencies/realsense_ros2_camera\n'}
+[2.980930] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/ament_index/resource_index/parent_prefix_path/realsense_ros2_camera\n'}
+[2.982323] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/environment/ament_prefix_path.sh\n'}
+[2.995248] (-) TimerEvent: {}
+[2.996028] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/environment/path.sh\n'}
+[2.997241] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/local_setup.bash\n'}
+[2.998208] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/local_setup.sh\n'}
+[2.998965] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/local_setup.zsh\n'}
+[2.999667] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/ament_index/resource_index/packages/realsense_ros2_camera\n'}
+[3.000599] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/cmake/realsense_ros2_cameraConfig.cmake\n'}
+[3.001643] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/cmake/realsense_ros2_cameraConfig-version.cmake\n'}
+[3.002635] (realsense_ros2_camera) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.xml\n'}
+[3.003284] (realsense_ros2_camera) CommandEnded: {'returncode': 0}
+[3.096020] (-) TimerEvent: {}
+[3.179188] (darknet_ros) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o\x1b[0m\n'}
+[3.196613] (-) TimerEvent: {}
+[3.255833] (realsense_ros2_camera) JobEnded: {'identifier': 'realsense_ros2_camera', 'rc': 0}
+[3.296866] (-) TimerEvent: {}
+[3.397976] (-) TimerEvent: {}
+[3.499623] (-) TimerEvent: {}
+[3.601203] (-) TimerEvent: {}
+[3.702360] (-) TimerEvent: {}
+[3.803640] (-) TimerEvent: {}
+[3.905160] (-) TimerEvent: {}
+[4.006331] (-) TimerEvent: {}
+[4.107459] (-) TimerEvent: {}
+[4.208834] (-) TimerEvent: {}
+[4.309965] (-) TimerEvent: {}
+[4.411201] (-) TimerEvent: {}
+[4.512474] (-) TimerEvent: {}
+[4.614026] (-) TimerEvent: {}
+[4.715622] (-) TimerEvent: {}
+[4.817397] (-) TimerEvent: {}
+[4.919072] (-) TimerEvent: {}
+[5.020326] (-) TimerEvent: {}
+[5.121521] (-) TimerEvent: {}
+[5.222719] (-) TimerEvent: {}
+[5.324380] (-) TimerEvent: {}
+[5.425929] (-) TimerEvent: {}
+[5.527521] (-) TimerEvent: {}
+[5.629172] (-) TimerEvent: {}
+[5.730802] (-) TimerEvent: {}
+[5.832016] (-) TimerEvent: {}
+[5.933270] (-) TimerEvent: {}
+[6.035303] (-) TimerEvent: {}
+[6.136489] (-) TimerEvent: {}
+[6.237699] (-) TimerEvent: {}
+[6.338857] (-) TimerEvent: {}
+[6.440440] (-) TimerEvent: {}
+[6.542003] (-) TimerEvent: {}
+[6.643571] (-) TimerEvent: {}
+[6.746790] (-) TimerEvent: {}
+[6.848447] (-) TimerEvent: {}
+[6.949950] (-) TimerEvent: {}
+[7.051094] (-) TimerEvent: {}
+[7.152833] (-) TimerEvent: {}
+[7.254520] (-) TimerEvent: {}
+[7.356657] (-) TimerEvent: {}
+[7.458772] (-) TimerEvent: {}
+[7.559968] (-) TimerEvent: {}
+[7.661412] (-) TimerEvent: {}
+[7.763078] (-) TimerEvent: {}
+[7.864454] (-) TimerEvent: {}
+[7.966521] (-) TimerEvent: {}
+[8.067712] (-) TimerEvent: {}
+[8.169552] (-) TimerEvent: {}
+[8.271271] (-) TimerEvent: {}
+[8.372649] (-) TimerEvent: {}
+[8.474159] (-) TimerEvent: {}
+[8.575390] (-) TimerEvent: {}
+[8.676581] (-) TimerEvent: {}
+[8.777768] (-) TimerEvent: {}
+[8.878946] (-) TimerEvent: {}
+[8.980191] (-) TimerEvent: {}
+[9.081437] (-) TimerEvent: {}
+[9.182629] (-) TimerEvent: {}
+[9.283842] (-) TimerEvent: {}
+[9.385103] (-) TimerEvent: {}
+[9.486307] (-) TimerEvent: {}
+[9.587578] (-) TimerEvent: {}
+[9.688874] (-) TimerEvent: {}
+[9.790133] (-) TimerEvent: {}
+[9.891275] (-) TimerEvent: {}
+[9.993464] (-) TimerEvent: {}
+[10.094669] (-) TimerEvent: {}
+[10.195872] (-) TimerEvent: {}
+[10.297123] (-) TimerEvent: {}
+[10.398635] (-) TimerEvent: {}
+[10.499840] (-) TimerEvent: {}
+[10.601134] (-) TimerEvent: {}
+[10.702281] (-) TimerEvent: {}
+[10.803473] (-) TimerEvent: {}
+[10.904696] (-) TimerEvent: {}
+[11.005910] (-) TimerEvent: {}
+[11.107087] (-) TimerEvent: {}
+[11.208383] (-) TimerEvent: {}
+[11.309596] (-) TimerEvent: {}
+[11.410763] (-) TimerEvent: {}
+[11.511914] (-) TimerEvent: {}
+[11.613331] (-) TimerEvent: {}
+[11.715839] (-) TimerEvent: {}
+[11.817119] (-) TimerEvent: {}
+[11.918258] (-) TimerEvent: {}
+[12.019379] (-) TimerEvent: {}
+[12.121302] (-) TimerEvent: {}
+[12.222554] (-) TimerEvent: {}
+[12.323772] (-) TimerEvent: {}
+[12.425535] (-) TimerEvent: {}
+[12.527077] (-) TimerEvent: {}
+[12.628879] (-) TimerEvent: {}
+[12.732459] (-) TimerEvent: {}
+[12.834073] (-) TimerEvent: {}
+[12.935630] (-) TimerEvent: {}
+[13.036881] (-) TimerEvent: {}
+[13.138048] (-) TimerEvent: {}
+[13.239234] (-) TimerEvent: {}
+[13.340462] (-) TimerEvent: {}
+[13.441784] (-) TimerEvent: {}
+[13.543431] (-) TimerEvent: {}
+[13.644622] (-) TimerEvent: {}
+[13.745776] (-) TimerEvent: {}
+[13.800601] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid darknet_ros::YoloObjectDetector::init()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.802600] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:187:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::ImageTransport::ImageTransport(const char [11])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.803383] (darknet_ros) StderrLine: {'line': b' ake_shared<image_transport::ImageTransport ("compressed"\x1b[01;31m\x1b[K)\x1b[m\x1b[K>(shared_from_this());\n'}
+[13.804002] (darknet_ros) StderrLine: {'line': b'                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.804950] (darknet_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:30:0\x1b[m\x1b[K,\n'}
+[13.805725] (darknet_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:10\x1b[m\x1b[K:\n'}
+[13.806567] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:116:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: image_transport::ImageTransport::ImageTransport(rclcpp::Node::SharedPtr)\n'}
+[13.807307] (darknet_ros) StderrLine: {'line': b'   explicit \x1b[01;36m\x1b[KImageTransport\x1b[m\x1b[K(rclcpp::Node::SharedPtr node);\n'}
+[13.807918] (darknet_ros) StderrLine: {'line': b'            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.808696] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:116:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [11]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::SharedPtr {aka std::shared_ptr<rclcpp::Node>}\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.809428] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:187:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >(std::shared_ptr<rclcpp::Node>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.810064] (darknet_ros) StderrLine: {'line': b' mage_transport::ImageTransport ("compressed")>(shared_from_this()\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[13.810673] (darknet_ros) StderrLine: {'line': b'                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.811278] (darknet_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/7/memory:81:0\x1b[m\x1b[K,\n'}
+[13.811861] (darknet_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/7/thread:39\x1b[m\x1b[K,\n'}
+[13.812625] (darknet_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:17\x1b[m\x1b[K,\n'}
+[13.813273] (darknet_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:10\x1b[m\x1b[K:\n'}
+[13.813860] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr.h:703:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\n'}
+[13.814580] (darknet_ros) StderrLine: {'line': b'     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[13.815207] (darknet_ros) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.815801] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/bits/shared_ptr.h:703:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.816588] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:187:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.817267] (darknet_ros) StderrLine: {'line': b' mage_transport::ImageTransport ("compressed")>(shared_from_this()\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[13.817943] (darknet_ros) StderrLine: {'line': b'                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.846036] (-) TimerEvent: {}
+[13.895647] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:191:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::ImageTransport::subscribe(std::__cxx11::string&, int&, std::_Bind_helper<false, void (darknet_ros::YoloObjectDetector::*)(const sensor_msgs::msg::CompressedImage_<std::allocator<void> >&), darknet_ros::YoloObjectDetector*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.897050] (darknet_ros) StderrLine: {'line': b'     std::bind(&YoloObjectDetector::cameraCallback, this, _1)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[13.898009] (darknet_ros) StderrLine: {'line': b'                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.898717] (darknet_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:30:0\x1b[m\x1b[K,\n'}
+[13.899450] (darknet_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:10\x1b[m\x1b[K:\n'}
+[13.900156] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:141:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*)\n'}
+[13.901051] (darknet_ros) StderrLine: {'line': b'   Subscriber \x1b[01;36m\x1b[Ksubscribe\x1b[m\x1b[K(\n'}
+[13.901730] (darknet_ros) StderrLine: {'line': b'              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.902348] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:141:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 3 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (darknet_ros::YoloObjectDetector::*)(const sensor_msgs::msg::CompressedImage_<std::allocator<void> >&), darknet_ros::YoloObjectDetector*, const std::_Placeholder<1>&>::type {aka std::_Bind<void (darknet_ros::YoloObjectDetector::*(darknet_ros::YoloObjectDetector*, std::_Placeholder<1>))(const sensor_msgs::msg::CompressedImage_<std::allocator<void> >&)>}\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst Callback& {aka const std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)>&}\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.903036] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:151:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*)\n'}
+[13.903704] (darknet_ros) StderrLine: {'line': b'   Subscriber \x1b[01;36m\x1b[Ksubscribe\x1b[m\x1b[K(\n'}
+[13.904690] (darknet_ros) StderrLine: {'line': b'              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.905499] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:151:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 3 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (darknet_ros::YoloObjectDetector::*)(const sensor_msgs::msg::CompressedImage_<std::allocator<void> >&), darknet_ros::YoloObjectDetector*, const std::_Placeholder<1>&>::type {aka std::_Bind<void (darknet_ros::YoloObjectDetector::*(darknet_ros::YoloObjectDetector*, std::_Placeholder<1>))(const sensor_msgs::msg::CompressedImage_<std::allocator<void> >&)>}\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kvoid (*)(const ImageConstPtr&) {aka void (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)}\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.906333] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:165:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: template<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*)\n'}
+[13.907057] (darknet_ros) StderrLine: {'line': b'   Subscriber \x1b[01;36m\x1b[Ksubscribe\x1b[m\x1b[K(\n'}
+[13.907775] (darknet_ros) StderrLine: {'line': b'              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.923355] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:165:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.924508] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:191:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kvoid (T::*)(const ImageConstPtr&)\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (darknet_ros::YoloObjectDetector::*(darknet_ros::YoloObjectDetector*, std::_Placeholder<1>))(const sensor_msgs::msg::CompressedImage_<std::allocator<void> >&)>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.925469] (darknet_ros) StderrLine: {'line': b'     std::bind(&YoloObjectDetector::cameraCallback, this, _1)\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[13.926335] (darknet_ros) StderrLine: {'line': b'                                                             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.927146] (darknet_ros) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:30:0\x1b[m\x1b[K,\n'}
+[13.927896] (darknet_ros) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:10\x1b[m\x1b[K:\n'}
+[13.928756] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:178:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: template<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*)\n'}
+[13.929704] (darknet_ros) StderrLine: {'line': b'   Subscriber \x1b[01;36m\x1b[Ksubscribe\x1b[m\x1b[K(\n'}
+[13.932156] (darknet_ros) StderrLine: {'line': b'              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.933091] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/image_transport/image_transport.h:178:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.933801] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:191:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kvoid (T::*)(const ImageConstPtr&)\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (darknet_ros::YoloObjectDetector::*(darknet_ros::YoloObjectDetector*, std::_Placeholder<1>))(const sensor_msgs::msg::CompressedImage_<std::allocator<void> >&)>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.934610] (darknet_ros) StderrLine: {'line': b'     std::bind(&YoloObjectDetector::cameraCallback, this, _1)\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[13.936026] (darknet_ros) StderrLine: {'line': b'                                                             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.946284] (-) TimerEvent: {}
+[14.047557] (-) TimerEvent: {}
+[14.139306] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid darknet_ros::YoloObjectDetector::cameraCallback(const CompressedImage&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.140592] (darknet_ros) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:246:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 has non-pointer type \xe2\x80\x98\x1b[01m\x1b[Kconst CompressedImage {aka const sensor_msgs::msg::CompressedImage_<std::allocator<void> >}\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.141412] (darknet_ros) StderrLine: {'line': b'       imageHeader_ = msg\x1b[01;31m\x1b[K->\x1b[m\x1b[Kheader;\n'}
+[14.142051] (darknet_ros) StderrLine: {'line': b'                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[14.147755] (-) TimerEvent: {}
+[14.248927] (-) TimerEvent: {}
+[14.350102] (-) TimerEvent: {}
+[14.451314] (-) TimerEvent: {}
+[14.552490] (-) TimerEvent: {}
+[14.653735] (-) TimerEvent: {}
+[14.754989] (-) TimerEvent: {}
+[14.856181] (-) TimerEvent: {}
+[14.958514] (-) TimerEvent: {}
+[15.060040] (-) TimerEvent: {}
+[15.162212] (-) TimerEvent: {}
+[15.264631] (-) TimerEvent: {}
+[15.365862] (-) TimerEvent: {}
+[15.467464] (-) TimerEvent: {}
+[15.571034] (-) TimerEvent: {}
+[15.673360] (-) TimerEvent: {}
+[15.774918] (-) TimerEvent: {}
+[15.876526] (-) TimerEvent: {}
+[15.978086] (-) TimerEvent: {}
+[16.079304] (-) TimerEvent: {}
+[16.181452] (-) TimerEvent: {}
+[16.282986] (-) TimerEvent: {}
+[16.384676] (-) TimerEvent: {}
+[16.485858] (-) TimerEvent: {}
+[16.587029] (-) TimerEvent: {}
+[16.688352] (-) TimerEvent: {}
+[16.789608] (-) TimerEvent: {}
+[16.890789] (-) TimerEvent: {}
+[16.991955] (-) TimerEvent: {}
+[17.093419] (-) TimerEvent: {}
+[17.195024] (-) TimerEvent: {}
+[17.296665] (-) TimerEvent: {}
+[17.398223] (-) TimerEvent: {}
+[17.499411] (-) TimerEvent: {}
+[17.600676] (-) TimerEvent: {}
+[17.701872] (-) TimerEvent: {}
+[17.803095] (-) TimerEvent: {}
+[17.904358] (-) TimerEvent: {}
+[18.005580] (-) TimerEvent: {}
+[18.106762] (-) TimerEvent: {}
+[18.207946] (-) TimerEvent: {}
+[18.309244] (-) TimerEvent: {}
+[18.410433] (-) TimerEvent: {}
+[18.511624] (-) TimerEvent: {}
+[18.612909] (-) TimerEvent: {}
+[18.714097] (-) TimerEvent: {}
+[18.815374] (-) TimerEvent: {}
+[18.916958] (-) TimerEvent: {}
+[19.018138] (-) TimerEvent: {}
+[19.119355] (-) TimerEvent: {}
+[19.220545] (-) TimerEvent: {}
+[19.321712] (-) TimerEvent: {}
+[19.422890] (-) TimerEvent: {}
+[19.524100] (-) TimerEvent: {}
+[19.625389] (-) TimerEvent: {}
+[19.726575] (-) TimerEvent: {}
+[19.827733] (-) TimerEvent: {}
+[19.929485] (-) TimerEvent: {}
+[20.030619] (-) TimerEvent: {}
+[20.131743] (-) TimerEvent: {}
+[20.232987] (-) TimerEvent: {}
+[20.334231] (-) TimerEvent: {}
+[20.435479] (-) TimerEvent: {}
+[20.536849] (-) TimerEvent: {}
+[20.638045] (-) TimerEvent: {}
+[20.739235] (-) TimerEvent: {}
+[20.840510] (-) TimerEvent: {}
+[20.941656] (-) TimerEvent: {}
+[21.042861] (-) TimerEvent: {}
+[21.144070] (-) TimerEvent: {}
+[21.245392] (-) TimerEvent: {}
+[21.346602] (-) TimerEvent: {}
+[21.447791] (-) TimerEvent: {}
+[21.549120] (-) TimerEvent: {}
+[21.650327] (-) TimerEvent: {}
+[21.751533] (-) TimerEvent: {}
+[21.852843] (-) TimerEvent: {}
+[21.953987] (-) TimerEvent: {}
+[22.055225] (-) TimerEvent: {}
+[22.156494] (-) TimerEvent: {}
+[22.257652] (-) TimerEvent: {}
+[22.358876] (-) TimerEvent: {}
+[22.460122] (-) TimerEvent: {}
+[22.483548] (darknet_ros) StdoutLine: {'line': b"CMakeFiles/darknet_ros_lib.dir/build.make:2370: recipe for target 'CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o' failed\n"}
+[22.486986] (darknet_ros) StderrLine: {'line': b'make[2]: *** [CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o] Error 1\n'}
+[22.490217] (darknet_ros) StderrLine: {'line': b'make[1]: *** [CMakeFiles/darknet_ros_lib.dir/all] Error 2\n'}
+[22.491129] (darknet_ros) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[22.491807] (darknet_ros) StdoutLine: {'line': b"CMakeFiles/Makefile2:111: recipe for target 'CMakeFiles/darknet_ros_lib.dir/all' failed\n"}
+[22.493737] (darknet_ros) StdoutLine: {'line': b"Makefile:145: recipe for target 'all' failed\n"}
+[22.497233] (darknet_ros) CommandEnded: {'returncode': 2}
+[22.560591] (-) TimerEvent: {}
+[22.662343] (-) TimerEvent: {}
+[22.764183] (-) TimerEvent: {}
+[22.865888] (-) TimerEvent: {}
+[22.966925] (-) TimerEvent: {}
+[23.068433] (-) TimerEvent: {}
+[23.170269] (-) TimerEvent: {}
+[23.272154] (-) TimerEvent: {}
+[23.338607] (darknet_ros) JobEnded: {'identifier': 'darknet_ros', 'rc': 2}
+[23.357011] (-) EventReactorShutdown: {}

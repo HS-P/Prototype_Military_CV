@@ -1,0 +1,70 @@
+[0.120s] Invoking command in '/home/hansol/ros2_ws/build/realsense_ros2_camera': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/realsense_ros2_camera -- -j4 -l4
+[0.249s] [ 50%] [32mBuilding CXX object CMakeFiles/realsense_ros2_camera.dir/src/realsense_camera_node.cpp.o[0m
+[11.343s] In file included from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_sensor.hpp:8:0[m[K,
+[11.346s]                  from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_device.hpp:8[m[K,
+[11.349s]                  from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_record_playback.hpp:8[m[K,
+[11.350s]                  from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_context.hpp:8[m[K,
+[11.350s]                  from [01m[K/opt/ros/dashing/include/librealsense2/rs.hpp:9[m[K,
+[11.352s]                  from [01m[K/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera/src/realsense_camera_node.cpp:34[m[K:
+[11.352s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_frame.hpp:[m[K In lambda function:
+[11.353s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_frame.hpp:932:120:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[11.360s]  ED && [01;35m[Kframe.get_profile().stream_index() == index[m[K)
+[11.368s]        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[11.760s] In file included from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_context.hpp:9:0[m[K,
+[11.762s]                  from [01m[K/opt/ros/dashing/include/librealsense2/rs.hpp:9[m[K,
+[11.763s]                  from [01m[K/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera/src/realsense_camera_node.cpp:34[m[K:
+[11.763s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:[m[K In constructor ‘[01m[Krs2::processing_block::processing_block(std::shared_ptr<rs2_processing_block>)[m[K’:
+[11.765s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:295:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Krs2::processing_block::_block[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[11.767s]       std::shared_ptr<rs2_processing_block> [01;35m[K_block[m[K;
+[11.768s]                                             [01;35m[K^~~~~~[m[K
+[11.769s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:265:63:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[Krs2::options[m[K’ [[01;35m[K-Wreorder[m[K]
+[11.770s]   _block(block), options((rs2_options*)block.get()[01;35m[K)[m[K
+[11.771s]                                                   [01;35m[K^[m[K
+[11.772s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:264:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[11.776s]          [01;35m[Kprocessing_block[m[K(std::shared_ptr<rs2_processing_block> block)
+[11.779s]          [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[11.781s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:[m[K In constructor ‘[01m[Krs2::processing_block::processing_block(std::shared_ptr<rs2_processing_block>, int)[m[K’:
+[11.783s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:296:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Krs2::processing_block::_queue[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[11.783s]          frame_queue [01;35m[K_queue[m[K;
+[11.784s]                      [01;35m[K^~~~~~[m[K
+[11.785s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:290:83:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[Krs2::options[m[K’ [[01;35m[K-Wreorder[m[K]
+[11.786s]  ue(queue_size), options((rs2_options*)block.get()[01;35m[K)[m[K
+[11.787s]                                                   [01;35m[K^[m[K
+[11.788s] [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:289:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[11.789s]          [01;35m[Kprocessing_block[m[K(std::shared_ptr<rs2_processing_block> block, int queue_size)
+[11.789s]          [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[24.271s] In file included from [01m[K/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera/src/realsense_camera_node.cpp:35:0[m[K:
+[24.272s] [01m[K/opt/ros/dashing/include/librealsense2/rsutil.h:[m[K At global scope:
+[24.274s] [01m[K/opt/ros/dashing/include/librealsense2/rsutil.h:116:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rs2_project_color_pixel_to_depth_pixel(float*, const uint16_t*, float, float, float, const rs2_intrinsics*, const rs2_intrinsics*, const rs2_extrinsics*, const rs2_extrinsics*, const float*)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[24.275s]  static void [01;35m[Krs2_project_color_pixel_to_depth_pixel[m[K(float to_pixel[2],
+[24.278s]              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.280s] [01m[K/opt/ros/dashing/include/librealsense2/rsutil.h:80:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rs2_fov(const rs2_intrinsics*, float*)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[24.285s]  static void [01;35m[Krs2_fov[m[K(const struct rs2_intrinsics * intrin, float to_fov[2])
+[24.286s]              [01;35m[K^~~~~~~[m[K
+[41.734s] [100%] [32m[1mLinking CXX executable realsense_ros2_camera[0m
+[47.406s] /usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/dashing/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.5
+[47.407s] /usr/bin/ld: warning: libopencv_core.so.3.2, needed by /opt/ros/dashing/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5
+[47.434s] [100%] Built target realsense_ros2_camera
+[47.465s] Invoked command in '/home/hansol/ros2_ws/build/realsense_ros2_camera' returned '0': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/realsense_ros2_camera -- -j4 -l4
+[47.623s] Invoking command in '/home/hansol/ros2_ws/build/realsense_ros2_camera': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/realsense_ros2_camera
+[47.641s] -- Install configuration: ""
+[47.650s] -- Execute custom install script
+[47.651s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/bin/realsense_ros2_camera
+[47.652s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/lib/realsense_ros2_camera/realsense_ros2_camera
+[47.653s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/include/realsense_ros2_camera/constants.hpp
+[47.654s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/default.rviz
+[47.656s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/realsense2_to_laserscan.py
+[47.661s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/ros2_intel_realsense.launch.py
+[47.664s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/rs.launch.py
+[47.668s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/ament_index/resource_index/package_run_dependencies/realsense_ros2_camera
+[47.669s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/ament_index/resource_index/parent_prefix_path/realsense_ros2_camera
+[47.672s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/environment/ament_prefix_path.sh
+[47.675s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/environment/path.sh
+[47.678s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/local_setup.bash
+[47.681s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/local_setup.sh
+[47.685s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/local_setup.zsh
+[47.686s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/ament_index/resource_index/packages/realsense_ros2_camera
+[47.687s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/cmake/realsense_ros2_cameraConfig.cmake
+[47.688s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/cmake/realsense_ros2_cameraConfig-version.cmake
+[47.689s] -- Up-to-date symlink: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.xml
+[47.702s] Invoked command in '/home/hansol/ros2_ws/build/realsense_ros2_camera' returned '0': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/realsense_ros2_camera
