@@ -1,0 +1,55 @@
+[0.115s] Invoking command in '/home/hansol/ros2_ws/build/darknet_ros': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros -- -j4 -l4
+[0.423s] [  1%] [32mBuilding CXX object CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o[0m
+[11.532s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:[m[K In member function ‘[01m[Kvoid darknet_ros::YoloObjectDetector::init()[m[K’:
+[11.533s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:190:63:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::TransportHints::TransportHints(const char [11])[m[K’
+[11.534s]    image_transport::TransportHints transport_hints("compressed"[01;31m[K)[m[K;
+[11.535s]                                                                [01;31m[K^[m[K
+[11.535s] In file included from [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:49:0[m[K,
+[11.536s]                  from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:30[m[K,
+[11.537s]                  from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:10[m[K:
+[11.537s] [01m[K/opt/ros/dashing/include/image_transport/transport_hints.h:67:3:[m[K [01;36m[Knote: [m[Kcandidate: image_transport::TransportHints::TransportHints(const rclcpp::Node*, const string&, const string&)
+[11.538s]    [01;36m[KTransportHints[m[K(
+[11.539s]    [01;36m[K^~~~~~~~~~~~~~[m[K
+[11.539s] [01m[K/opt/ros/dashing/include/image_transport/transport_hints.h:67:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [11][m[K’ to ‘[01m[Kconst rclcpp::Node*[m[K’
+[11.540s] [01m[K/opt/ros/dashing/include/image_transport/transport_hints.h:51:7:[m[K [01;36m[Knote: [m[Kcandidate: image_transport::TransportHints::TransportHints(const image_transport::TransportHints&)
+[11.541s]  class [01;36m[KTransportHints[m[K
+[11.541s]        [01;36m[K^~~~~~~~~~~~~~[m[K
+[11.542s] [01m[K/opt/ros/dashing/include/image_transport/transport_hints.h:51:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [11][m[K’ to ‘[01m[Kconst image_transport::TransportHints&[m[K’
+[11.543s] [01m[K/opt/ros/dashing/include/image_transport/transport_hints.h:51:7:[m[K [01;36m[Knote: [m[Kcandidate: image_transport::TransportHints::TransportHints(image_transport::TransportHints&&)
+[11.543s] [01m[K/opt/ros/dashing/include/image_transport/transport_hints.h:51:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [11][m[K’ to ‘[01m[Kimage_transport::TransportHints&&[m[K’
+[11.621s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:193:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::ImageTransport::subscribe(std::__cxx11::string&, int&, std::_Bind_helper<false, void (darknet_ros::YoloObjectDetector::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&), darknet_ros::YoloObjectDetector*, image_transport::TransportHints&>::type)[m[K’
+[11.621s]      std::bind(&YoloObjectDetector::cameraCallback, this, transport_hints)[01;31m[K)[m[K;
+[11.622s]                                                                           [01;31m[K^[m[K
+[11.623s] In file included from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:30:0[m[K,
+[11.624s]                  from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:10[m[K:
+[11.624s] [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:141:14:[m[K [01;36m[Knote: [m[Kcandidate: image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*)
+[11.625s]    Subscriber [01;36m[Ksubscribe[m[K(
+[11.625s]               [01;36m[K^~~~~~~~~[m[K
+[11.626s] [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:141:14:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kstd::_Bind_helper<false, void (darknet_ros::YoloObjectDetector::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&), darknet_ros::YoloObjectDetector*, image_transport::TransportHints&>::type {aka std::_Bind<void (darknet_ros::YoloObjectDetector::*(darknet_ros::YoloObjectDetector*, image_transport::TransportHints))(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&)>}[m[K’ to ‘[01m[Kconst Callback& {aka const std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)>&}[m[K’
+[11.627s] [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:151:14:[m[K [01;36m[Knote: [m[Kcandidate: image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*)
+[11.628s]    Subscriber [01;36m[Ksubscribe[m[K(
+[11.628s]               [01;36m[K^~~~~~~~~[m[K
+[11.629s] [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:151:14:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kstd::_Bind_helper<false, void (darknet_ros::YoloObjectDetector::*)(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&), darknet_ros::YoloObjectDetector*, image_transport::TransportHints&>::type {aka std::_Bind<void (darknet_ros::YoloObjectDetector::*(darknet_ros::YoloObjectDetector*, image_transport::TransportHints))(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&)>}[m[K’ to ‘[01m[Kvoid (*)(const ImageConstPtr&) {aka void (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)}[m[K’
+[11.630s] [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:165:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*)
+[11.630s]    Subscriber [01;36m[Ksubscribe[m[K(
+[11.631s]               [01;36m[K^~~~~~~~~[m[K
+[11.632s] [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:165:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.633s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:193:74:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kstd::_Bind<void (darknet_ros::YoloObjectDetector::*(darknet_ros::YoloObjectDetector*, image_transport::TransportHints))(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&)>[m[K’
+[11.634s]      std::bind(&YoloObjectDetector::cameraCallback, this, transport_hints)[01;36m[K)[m[K;
+[11.634s]                                                                           [01;36m[K^[m[K
+[11.635s] In file included from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:30:0[m[K,
+[11.636s]                  from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:10[m[K:
+[11.636s] [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:178:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*)
+[11.637s]    Subscriber [01;36m[Ksubscribe[m[K(
+[11.638s]               [01;36m[K^~~~~~~~~[m[K
+[11.638s] [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:178:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.639s] [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:193:74:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kstd::_Bind<void (darknet_ros::YoloObjectDetector::*(darknet_ros::YoloObjectDetector*, image_transport::TransportHints))(const std::shared_ptr<const sensor_msgs::msg::CompressedImage_<std::allocator<void> > >&)>[m[K’
+[11.640s]      std::bind(&YoloObjectDetector::cameraCallback, this, transport_hints)[01;36m[K)[m[K;
+[11.640s]                                                                           [01;36m[K^[m[K
+[20.324s] make[2]: *** [CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o] Error 1
+[20.326s] CMakeFiles/darknet_ros_lib.dir/build.make:2370: recipe for target 'CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o' failed
+[20.328s] CMakeFiles/Makefile2:111: recipe for target 'CMakeFiles/darknet_ros_lib.dir/all' failed
+[20.329s] make[1]: *** [CMakeFiles/darknet_ros_lib.dir/all] Error 2
+[20.330s] Makefile:145: recipe for target 'all' failed
+[20.330s] make: *** [all] Error 2
+[20.336s] Invoked command in '/home/hansol/ros2_ws/build/darknet_ros' returned '2': CMAKE_PREFIX_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs:/home/hansol/ros2_ws/install/realsense_ros2_camera:/home/hansol/ros2_ws/install/realsense_camera_msgs:/home/hansol/ros2_ws/install/darknet_ros:/home/hansol/ros2_ws/install/Darknet:/opt/ros/dashing LD_LIBRARY_PATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib:/home/hansol/ros2_ws/install/darknet_ros/lib:/opt/ros/dashing/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/hansol/ros2_ws/install/darknet_ros_msgs/lib/python3.6/site-packages:/home/hansol/ros2_ws/install/realsense_camera_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/darknet_ros -- -j4 -l4

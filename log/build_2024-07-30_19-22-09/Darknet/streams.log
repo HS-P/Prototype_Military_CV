@@ -1,0 +1,61 @@
+[0.104s] Invoking command in '/home/hansol/ros2_ws/build/Darknet': /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/Darknet -- -j4 -l4
+[0.118s] Change Dir: '/home/hansol/ros2_ws/build/Darknet'
+[0.119s] 
+[0.120s] Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile -j4 -l4
+[0.144s] /usr/local/bin/cmake -S/home/hansol/ros2_ws/src/darknet_ros/darknet -B/home/hansol/ros2_ws/build/Darknet --check-build-system CMakeFiles/Makefile.cmake 0
+[0.165s] /usr/local/bin/cmake -E cmake_progress_start /home/hansol/ros2_ws/build/Darknet/CMakeFiles /home/hansol/ros2_ws/build/Darknet//CMakeFiles/progress.marks
+[0.188s] /usr/bin/make  -f CMakeFiles/Makefile2 all
+[0.192s] make[1]: Entering directory '/home/hansol/ros2_ws/build/Darknet'
+[0.194s] /usr/bin/make  -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/depend
+[0.195s] /usr/bin/make  -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/depend
+[0.284s] make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'
+[0.285s] cd /home/hansol/ros2_ws/build/Darknet && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet/CMakeFiles/dark.dir/DependInfo.cmake "--color="
+[0.291s] make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'
+[0.292s] cd /home/hansol/ros2_ws/build/Darknet && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet/CMakeFiles/darknet.dir/DependInfo.cmake "--color="
+[0.333s] make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'
+[0.336s] /usr/bin/make  -f CMakeFiles/darknet.dir/build.make CMakeFiles/darknet.dir/build
+[0.339s] make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'
+[0.341s] /usr/bin/make  -f CMakeFiles/dark.dir/build.make CMakeFiles/dark.dir/build
+[0.410s] make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'
+[0.410s] make[2]: Nothing to be done for 'CMakeFiles/darknet.dir/build'.
+[0.416s] make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'
+[0.433s] [ 48%] Built target darknet
+[0.444s] make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'
+[0.445s] make[2]: Nothing to be done for 'CMakeFiles/dark.dir/build'.
+[0.445s] make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'
+[0.465s] [ 97%] Built target dark
+[0.467s] /usr/bin/make  -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/depend
+[0.468s] /usr/bin/make  -f CMakeFiles/uselib.dir/build.make CMakeFiles/uselib.dir/depend
+[0.477s] make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'
+[0.478s] cd /home/hansol/ros2_ws/build/Darknet && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet/CMakeFiles/uselib.dir/DependInfo.cmake "--color="
+[0.480s] make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'
+[0.481s] cd /home/hansol/ros2_ws/build/Darknet && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/src/darknet_ros/darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet /home/hansol/ros2_ws/build/Darknet/CMakeFiles/uselib_track.dir/DependInfo.cmake "--color="
+[0.496s] make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'
+[0.497s] /usr/bin/make  -f CMakeFiles/uselib.dir/build.make CMakeFiles/uselib.dir/build
+[0.497s] make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'
+[0.499s] /usr/bin/make  -f CMakeFiles/uselib_track.dir/build.make CMakeFiles/uselib_track.dir/build
+[0.508s] make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'
+[0.510s] make[2]: Nothing to be done for 'CMakeFiles/uselib.dir/build'.
+[0.515s] make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'
+[0.516s] make[2]: Entering directory '/home/hansol/ros2_ws/build/Darknet'
+[0.516s] make[2]: Nothing to be done for 'CMakeFiles/uselib_track.dir/build'.
+[0.517s] make[2]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'
+[0.529s] [ 99%] Built target uselib_track
+[0.538s] [100%] Built target uselib
+[0.540s] make[1]: Leaving directory '/home/hansol/ros2_ws/build/Darknet'
+[0.541s] /usr/local/bin/cmake -E cmake_progress_start /home/hansol/ros2_ws/build/Darknet/CMakeFiles 0
+[0.565s] 
+[0.583s] Invoked command in '/home/hansol/ros2_ws/build/Darknet' returned '0': /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/Darknet -- -j4 -l4
+[1.487s] Invoking command in '/home/hansol/ros2_ws/build/Darknet': /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/Darknet
+[1.525s] -- Install configuration: "Release"
+[1.525s] -- Up-to-date: /home/hansol/ros2_ws/src/darknet_ros/darknet/libdarknet.so
+[1.526s] -- Up-to-date: /home/hansol/ros2_ws/install/Darknet/include/darknet/darknet.h
+[1.529s] -- Up-to-date: /home/hansol/ros2_ws/install/Darknet/include/darknet/yolo_v2_class.hpp
+[1.531s] -- Up-to-date: /home/hansol/ros2_ws/src/darknet_ros/darknet/uselib
+[1.532s] -- Up-to-date: /home/hansol/ros2_ws/src/darknet_ros/darknet/darknet
+[1.532s] -- Up-to-date: /home/hansol/ros2_ws/src/darknet_ros/darknet/uselib_track
+[1.534s] -- Up-to-date: /home/hansol/ros2_ws/install/Darknet/share/darknet/DarknetTargets.cmake
+[1.535s] -- Up-to-date: /home/hansol/ros2_ws/install/Darknet/share/darknet/DarknetTargets-release.cmake
+[1.536s] -- Up-to-date: /home/hansol/ros2_ws/install/Darknet/share/darknet/DarknetConfig.cmake
+[1.537s] -- Up-to-date: /home/hansol/ros2_ws/install/Darknet/share/darknet/DarknetConfigVersion.cmake
+[1.547s] Invoked command in '/home/hansol/ros2_ws/build/Darknet' returned '0': /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/Darknet

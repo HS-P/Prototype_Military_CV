@@ -1,0 +1,120 @@
+-- Create Debug Build.
+-- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[33mCMake Warning (dev) at /opt/ros/dashing/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/dashing/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+  /opt/ros/dashing/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+  /opt/ros/dashing/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:38 (include)
+  /opt/ros/dashing/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+  /opt/ros/dashing/share/ament_cmake/cmake/ament_cmakeConfig.cmake:38 (include)
+  CMakeLists.txt:61 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found builtin_interfaces: 0.7.4 (/opt/ros/dashing/share/builtin_interfaces/cmake)
+-- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+-- Found cv_bridge: 2.1.4 (/opt/ros/dashing/share/cv_bridge/cmake)
+[33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake:86 (find_package):
+  Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+  --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/lib/aarch64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake:108 (find_host_package)
+  /opt/ros/dashing/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/dashing/share/cv_bridge/cmake/cv_bridgeConfig.cmake:38 (include)
+  CMakeLists.txt:63 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found image_transport: 2.1.1 (/opt/ros/dashing/share/image_transport/cmake)
+-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found tinyxml2_vendor:  (/opt/ros/dashing/share/tinyxml2_vendor/cmake)
+-- Found poco_vendor:  (/opt/ros/dashing/share/poco_vendor/cmake)
+-- Found librealsense2: 2.16.5 (/opt/ros/dashing/share/librealsense2/cmake)
+-- Found realsense_camera_msgs: 2.0.4 (/home/hansol/ros2_ws/install/realsense_camera_msgs/share/realsense_camera_msgs/cmake)
+-- Found tf2_ros: 0.11.6 (/opt/ros/dashing/share/tf2_ros/cmake)
+-- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera/include
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (3.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/hansol/ros2_ws/build/realsense_ros2_camera
+[ 50%] [32mBuilding CXX object CMakeFiles/realsense_ros2_camera.dir/src/realsense_camera_node.cpp.o[0m
+In file included from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_sensor.hpp:8:0[m[K,
+                 from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_device.hpp:8[m[K,
+                 from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_record_playback.hpp:8[m[K,
+                 from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_context.hpp:8[m[K,
+                 from [01m[K/opt/ros/dashing/include/librealsense2/rs.hpp:9[m[K,
+                 from [01m[K/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera/src/realsense_camera_node.cpp:34[m[K:
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_frame.hpp:[m[K In lambda function:
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_frame.hpp:932:120:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+ me.get_profile().stream_type() == RS2_STREAM_INFRARED && [01;35m[Kframe.get_profile().stream_index() == index[m[K)
+                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_context.hpp:9:0[m[K,
+                 from [01m[K/opt/ros/dashing/include/librealsense2/rs.hpp:9[m[K,
+                 from [01m[K/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera/src/realsense_camera_node.cpp:34[m[K:
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:[m[K In constructor ‘[01m[Krs2::processing_block::processing_block(std::shared_ptr<rs2_processing_block>)[m[K’:
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:295:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Krs2::processing_block::_block[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+         std::shared_ptr<rs2_processing_block> [01;35m[K_block[m[K;
+                                               [01;35m[K^~~~~~[m[K
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:265:63:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[Krs2::options[m[K’ [[01;35m[K-Wreorder[m[K]
+             : _block(block), options((rs2_options*)block.get()[01;35m[K)[m[K
+                                                               [01;35m[K^[m[K
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:264:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+         [01;35m[Kprocessing_block[m[K(std::shared_ptr<rs2_processing_block> block)
+         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:[m[K In constructor ‘[01m[Krs2::processing_block::processing_block(std::shared_ptr<rs2_processing_block>, int)[m[K’:
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:296:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Krs2::processing_block::_queue[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+         frame_queue [01;35m[K_queue[m[K;
+                     [01;35m[K^~~~~~[m[K
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:290:83:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[Krs2::options[m[K’ [[01;35m[K-Wreorder[m[K]
+             : _block(block), _queue(queue_size), options((rs2_options*)block.get()[01;35m[K)[m[K
+                                                                                   [01;35m[K^[m[K
+[01m[K/opt/ros/dashing/include/librealsense2/hpp/rs_processing.hpp:289:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+         [01;35m[Kprocessing_block[m[K(std::shared_ptr<rs2_processing_block> block, int queue_size)
+         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_ros2_camera/src/realsense_camera_node.cpp:35:0[m[K:
+[01m[K/opt/ros/dashing/include/librealsense2/rsutil.h:[m[K At global scope:
+[01m[K/opt/ros/dashing/include/librealsense2/rsutil.h:116:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rs2_project_color_pixel_to_depth_pixel(float*, const uint16_t*, float, float, float, const rs2_intrinsics*, const rs2_intrinsics*, const rs2_extrinsics*, const rs2_extrinsics*, const float*)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ static void [01;35m[Krs2_project_color_pixel_to_depth_pixel[m[K(float to_pixel[2],
+             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/dashing/include/librealsense2/rsutil.h:80:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid rs2_fov(const rs2_intrinsics*, float*)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ static void [01;35m[Krs2_fov[m[K(const struct rs2_intrinsics * intrin, float to_fov[2])
+             [01;35m[K^~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable realsense_ros2_camera[0m
+/usr/bin/ld: warning: libopencv_imgcodecs.so.3.2, needed by /opt/ros/dashing/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.4.5
+/usr/bin/ld: warning: libopencv_core.so.3.2, needed by /opt/ros/dashing/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5
+[100%] Built target realsense_ros2_camera
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/bin/realsense_ros2_camera
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/lib/realsense_ros2_camera/realsense_ros2_camera
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/include/realsense_ros2_camera/constants.hpp
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/default.rviz
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/realsense2_to_laserscan.py
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/ros2_intel_realsense.launch.py
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera//launch/rs.launch.py
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/ament_index/resource_index/package_run_dependencies/realsense_ros2_camera
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/ament_index/resource_index/parent_prefix_path/realsense_ros2_camera
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/environment/ament_prefix_path.sh
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/environment/path.sh
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/local_setup.bash
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/local_setup.sh
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/local_setup.zsh
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/ament_index/resource_index/packages/realsense_ros2_camera
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/cmake/realsense_ros2_cameraConfig.cmake
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/cmake/realsense_ros2_cameraConfig-version.cmake
+-- Symlinking: /home/hansol/ros2_ws/install/realsense_ros2_camera/share/realsense_ros2_camera/package.xml

@@ -1,0 +1,21 @@
+[  1%] [32mBuilding CXX object CMakeFiles/darknet_ros_lib.dir/src/yolo_object_detector_node.cpp.o[0m
+[  2%] [32mBuilding CXX object CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o[0m
+[01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:[m[K In member function ‘[01m[Kvoid darknet_ros::YoloObjectDetector::init()[m[K’:
+[01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:192:63:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kimage_transport::Subscriber[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::CompressedImage_<std::allocator<void> >, std::allocator<void> > >[m[K’)
+       std::bind(&YoloObjectDetector::cameraCallback, this, _1)[01;31m[K)[m[K;
+                                                               [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/dashing/include/image_transport/image_transport.h:48:0[m[K,
+                 from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/include/darknet_ros/YoloObjectDetector.hpp:30[m[K,
+                 from [01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:10[m[K:
+[01m[K/opt/ros/dashing/include/image_transport/subscriber.h:63:7:[m[K [01;36m[Knote: [m[Kcandidate: image_transport::Subscriber& image_transport::Subscriber::operator=(const image_transport::Subscriber&)
+ class [01;36m[KSubscriber[m[K
+       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/opt/ros/dashing/include/image_transport/subscriber.h:63:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::CompressedImage_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kconst image_transport::Subscriber&[m[K’
+[01m[K/opt/ros/dashing/include/image_transport/subscriber.h:63:7:[m[K [01;36m[Knote: [m[Kcandidate: image_transport::Subscriber& image_transport::Subscriber::operator=(image_transport::Subscriber&&)
+[01m[K/opt/ros/dashing/include/image_transport/subscriber.h:63:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::CompressedImage_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kimage_transport::Subscriber&&[m[K’
+CMakeFiles/darknet_ros_lib.dir/build.make:2370: recipe for target 'CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o' failed
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o] Error 1
+CMakeFiles/Makefile2:111: recipe for target 'CMakeFiles/darknet_ros_lib.dir/all' failed
+make[1]: *** [CMakeFiles/darknet_ros_lib.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:145: recipe for target 'all' failed

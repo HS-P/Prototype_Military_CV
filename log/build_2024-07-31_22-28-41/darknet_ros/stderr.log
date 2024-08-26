@@ -1,0 +1,7 @@
+[01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:[m[K In member function ‘[01m[Kvoid darknet_ros::YoloObjectDetector::init()[m[K’:
+[01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:193:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+     std::bind(&YoloObjectDetector::cameraCallback, this, std::placeholders::_1),[01;31m[Kros[m[K::VoidPtr(),transport_hints);
+                                                                                 [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o] Error 1
+make[1]: *** [CMakeFiles/darknet_ros_lib.dir/all] Error 2
+make: *** [all] Error 2

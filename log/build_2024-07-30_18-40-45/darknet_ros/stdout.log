@@ -1,0 +1,84 @@
+-- Found Python3: /usr/bin/python3.6 (found version "3.6.9")
+-- Darknet path dir = /home/hansol/ros2_ws/src/darknet_ros/darknet
+-- CUDA Version: 
+-- CUDA Libararies: /usr/local/cuda-10.2/lib64/libcudart_static.a;Threads::Threads;dl;/usr/lib/aarch64-linux-gnu/librt.so
+-- cuDNN Version: 
+-- cuDNN Libararies: /usr/lib/aarch64-linux-gnu/libcudnn.so
+--  GPU (FP16): 
+-- Your setup does not support half precision (it requires CUDA_ARCHITECTURES >= 70)
+-- Searching for X11...
+--  X11_INCLUDE_DIR: /usr/include
+--  X11_LIBRARIES: /usr/lib/aarch64-linux-gnu/libSM.so/usr/lib/aarch64-linux-gnu/libICE.so/usr/lib/aarch64-linux-gnu/libX11.so/usr/lib/aarch64-linux-gnu/libXext.so
+-- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 0.7.16 (/opt/ros/dashing/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 0.7.11 (/opt/ros/dashing/share/rclpy/cmake)
+-- Found rclcpp_action: 0.7.16 (/opt/ros/dashing/share/rclcpp_action/cmake)
+-- Found std_msgs: 0.7.1 (/opt/ros/dashing/share/std_msgs/cmake)
+-- Found image_transport: 2.1.1 (/opt/ros/dashing/share/image_transport/cmake)
+-- Found tinyxml2_vendor:  (/opt/ros/dashing/share/tinyxml2_vendor/cmake)
+-- Found poco_vendor:  (/opt/ros/dashing/share/poco_vendor/cmake)
+-- Found cv_bridge: 2.1.4 (/opt/ros/dashing/share/cv_bridge/cmake)
+-- Found darknet_ros_msgs: 1.1.5 (/home/hansol/ros2_ws/install/darknet_ros_msgs/share/darknet_ros_msgs/cmake)
+-- Checking and downloading yolov4-tiny.weights if needed ...
+-- Done.
+-- Checking and downloading yolov4-csp.weights if needed ...
+-- Done.
+-- Checking and downloading yolov7-tiny.weights if needed ...
+-- Done.
+-- Configuring done (5.0s)
+-- Generating done (0.4s)
+-- Build files have been written to: /home/hansol/ros2_ws/build/darknet_ros
+[  1%] [32mBuilding CXX object CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o[0m
+[  2%] [32m[1mLinking CXX static library libdarknet_ros_lib.a[0m
+[ 97%] Built target darknet_ros_lib
+[ 98%] [32m[1mLinking CXX executable darknet_ros[0m
+[100%] Built target darknet_ros
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/lib/libdarknet_ros_lib.a
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/lib/darknet_ros/darknet_ros
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov2-tiny.cfg
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov3.cfg
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov4-csp.cfg
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov4-tiny.cfg
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov4.cfg
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//cfg/yolov7-tiny.cfg
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/.gitignore
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/how_to_download_weights.txt
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/yolov4-csp.weights
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/yolov4-tiny.weights
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/yolo_network_config//weights/yolov7-tiny.weights
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//launch/darknet_ros.launch.py
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//launch/yolov4-csp.launch.py
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//launch/yolov4-tiny.launch.py
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//launch/yolov7-tiny.launch.py
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/ros.yaml
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov2-tiny.yaml
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov3.yaml
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov4-csp.yaml
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov4-tiny.yaml
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov4.yaml
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros//config/yolov7-tiny.yaml
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/environment/library_path.sh
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/ament_index/resource_index/package_run_dependencies/darknet_ros
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/ament_index/resource_index/parent_prefix_path/darknet_ros
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/environment/ament_prefix_path.sh
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/environment/path.sh
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/local_setup.bash
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/local_setup.sh
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/local_setup.zsh
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/ament_index/resource_index/packages/darknet_ros
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/darknet_rosConfig.cmake
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/cmake/darknet_rosConfig-version.cmake
+-- Symlinking: /home/hansol/ros2_ws/install/darknet_ros/share/darknet_ros/package.xml
+-- Up-to-date: /home/hansol/ros2_ws/install/darknet_ros/include/
+-- Up-to-date: /home/hansol/ros2_ws/install/darknet_ros/include//darknet_ros
+-- Up-to-date: /home/hansol/ros2_ws/install/darknet_ros/include//darknet_ros/constants.h
