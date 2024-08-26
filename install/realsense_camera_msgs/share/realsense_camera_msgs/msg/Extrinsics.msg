@@ -1,1 +1,0 @@
-/home/hansol/ros2_ws/src/ros2_intel_realsense/realsense_camera_msgs/msg/Extrinsics.msg
