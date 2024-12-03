@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hansol/ros2_ws/build/realsense_camera_msgs/rosidl_generator_py/realsense_camera_msgs/realsense_camera_msgs_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so" "TARGETS" "realsense_camera_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.6/site-packages/realsense_camera_msgs")

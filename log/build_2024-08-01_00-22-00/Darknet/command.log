@@ -1,4 +1,0 @@
-Invoking command in '/home/hansol/ros2_ws/build/Darknet': /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/Darknet -- -j4 -l4
-Invoked command in '/home/hansol/ros2_ws/build/Darknet' returned '0': /usr/local/bin/cmake --build /home/hansol/ros2_ws/build/Darknet -- -j4 -l4
-Invoking command in '/home/hansol/ros2_ws/build/Darknet': /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/Darknet
-Invoked command in '/home/hansol/ros2_ws/build/Darknet' returned '0': /usr/local/bin/cmake --install /home/hansol/ros2_ws/build/Darknet

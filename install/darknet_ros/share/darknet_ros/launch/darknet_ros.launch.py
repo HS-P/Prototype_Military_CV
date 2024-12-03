@@ -1,1 +1,0 @@
-/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/launch/darknet_ros.launch.py

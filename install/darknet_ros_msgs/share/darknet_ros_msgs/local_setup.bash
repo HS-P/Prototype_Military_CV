@@ -1,1 +1,0 @@
-/home/hansol/ros2_ws/build/darknet_ros_msgs/ament_cmake_environment_hooks/local_setup.bash

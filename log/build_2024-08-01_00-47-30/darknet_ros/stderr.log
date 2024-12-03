@@ -1,7 +1,0 @@
-[01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:[m[K In member function ‘[01m[Kvoid* darknet_ros::YoloObjectDetector::detectInThread()[m[K’:
-[01m[K/home/hansol/ros2_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp:391:43:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K((darknet_ros::YoloObjectDetector*)this)->darknet_ros::YoloObjectDetector::net_[m[K’ from ‘[01m[Knetwork*[m[K’ to ‘[01m[Knetwork[m[K’
-   float *prediction = network_predict_gpu([01;31m[Knet_[m[K, X);
-                                           [01;31m[K^~~~[m[K
-make[2]: *** [CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o] Error 1
-make[1]: *** [CMakeFiles/darknet_ros_lib.dir/all] Error 2
-make: *** [all] Error 2
